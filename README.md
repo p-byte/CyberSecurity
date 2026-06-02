@@ -7,7 +7,7 @@ Production-ready cybersecurity course platform built with Next.js, React, Tailwi
 - Modern dark neon cybersecurity UI
 - Responsive pages for Home, About, Curriculum, Pricing, Testimonials, Contact, Blog, Privacy Policy, and Terms
 - Modular content in `src/content/site.ts` for easy editing
-- Contact API with input validation, CSRF token check, honeypot spam trap, and in-memory rate limiting
+- Google Form enrollment flow for collecting student details directly into Google Sheets
 - Security headers in Next.js and Nginx, including CSP, frame protection, MIME sniffing protection, and permissions policy
 - SEO metadata, OpenGraph metadata, structured data, `robots.txt`, and `sitemap.xml`
 - Multi-stage Docker build with non-root runtime user and healthchecks
@@ -65,58 +65,23 @@ Create `.env` from `.env.example`:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://pruthvicyberacademy.com
-NEXT_PUBLIC_CONTACT_EMAIL=training@pruthvicyberacademy.com
+NEXT_PUBLIC_CONTACT_EMAIL=nemanipruthvi.krishna@gmail.com
 NEXT_PUBLIC_WHATSAPP_URL=https://wa.me/919740781976
 NEXT_PUBLIC_TELEGRAM_URL=https://t.me/pruthvicyberacademy
 NEXT_PUBLIC_GOOGLE_FORM_URL=https://docs.google.com/forms/d/e/1FAIpQLScoXyN2EDoq-9c9pn1SLag7vMq8BEqn0ugBwJACrf57CDTQMg/viewform
-GOOGLE_SHEETS_WEBHOOK_URL=
-GOOGLE_SHEETS_WEBHOOK_SECRET=change-this-long-random-secret
 ```
 
 Use server-only variables without `NEXT_PUBLIC_` for future private secrets such as SMTP, CRM, or database credentials.
 
-## Save Contact Form Leads To Google Sheets
+## Save Google Form Responses To Google Sheets
 
-The public Google Form can save responses to Sheets automatically from Google Forms. Open the form, go to **Responses**, and choose a spreadsheet destination.
+The website uses the public Google Form for enrollment enquiries. To save submissions in Google Sheets:
 
-For the custom website contact form, use the included Apps Script webhook:
-
-1. Create a new Google Sheet.
-2. Open **Extensions > Apps Script**.
-3. Paste the code from:
-
-```text
-scripts/google-sheets-webhook.gs
-```
-
-4. In Apps Script, open **Project Settings > Script properties**.
-5. Add:
-
-```text
-WEBHOOK_SECRET=change-this-long-random-secret
-```
-
-Use the same value as `GOOGLE_SHEETS_WEBHOOK_SECRET` in `.env`.
-
-6. Click **Deploy > New deployment**.
-7. Select **Web app**.
-8. Set **Execute as** to your account.
-9. Set **Who has access** to anyone with the link.
-10. Copy the `/exec` Web app URL.
-11. Add it to `.env`:
-
-```bash
-GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
-GOOGLE_SHEETS_WEBHOOK_SECRET=change-this-long-random-secret
-```
-
-12. Rebuild Docker:
-
-```bash
-docker compose up -d --build
-```
-
-After that, every valid website contact form submission will append a row to the Google Sheet.
+1. Open the Google Form.
+2. Go to **Responses**.
+3. Click **Link to Sheets**.
+4. Choose an existing spreadsheet or create a new one.
+5. Every submitted response will appear as a new row in that linked sheet.
 
 ## Ubuntu VPS Deployment
 
@@ -184,15 +149,15 @@ docker compose up -d --build
 
 ## Cloudflare Compatibility
 
-The app works behind Cloudflare proxy. The Nginx config forwards `X-Forwarded-For` and `X-Forwarded-Proto`; application rate limiting reads the forwarded client IP.
+The app works behind Cloudflare proxy. The Nginx config forwards `X-Forwarded-For` and `X-Forwarded-Proto` for production compatibility.
 
-For stronger production rate limiting, configure Cloudflare WAF rules for `/api/contact` and add Turnstile to the contact form.
+For stronger production protection, configure Cloudflare WAF rules and bot protection for public pages and outbound form links.
 
 ## Security Notes
 
 - Docker runtime uses a non-root user.
 - Container filesystem is read-only in Compose.
 - Nginx and Next.js both send defense-in-depth security headers.
-- Contact API validates payloads with Zod.
+- Student details are collected through the Google Form instead of a custom contact API.
 - Secrets should be stored in environment variables or your deployment secret manager.
 - CSP currently allows inline/eval script styles required by the Next.js runtime and development ergonomics. Tighten this further with nonce-based CSP if you add a custom server.

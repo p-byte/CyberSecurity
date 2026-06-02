@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "About",
   path: "/about",
-  description: "Learn about Cyber security Academy, trainer Pruthvi Krishna Chowdary, and mentor-led cybersecurity training.",
+  description: "Learn about Cyber security Academy, trainer N Pruthvi Krishna, and mentor-led cybersecurity training.",
 });
 
 export default function AboutPage() {

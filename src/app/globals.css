@@ -3,6 +3,10 @@
 :root {
   --background: #020617;
   --foreground: #e2e8f0;
+  --accent-cyan: #22d3ee;
+  --accent-indigo: #6366f1;
+  --accent-violet: #8b5cf6;
+  --border-glow: rgba(34, 211, 238, 0.15);
 }
 
 @theme inline {
@@ -12,15 +16,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Custom Scrollbar for premium dark appearance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1b4b;
+  border-radius: 4px;
+  border: 2px solid #020617;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #312e81;
+}
+
 body {
-  background: var(--background);
+  background: radial-gradient(circle at 50% 30%, #080721 0%, #020617 80%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body::selection {
-  background: #67e8f9;
-  color: #020617;
+  background: rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 a,
@@ -29,16 +52,48 @@ input,
 textarea,
 select {
   outline-offset: 3px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Cybernetic Grid Background */
 .cyber-grid {
   background-image:
-    linear-gradient(rgba(34, 211, 238, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: radial-gradient(circle at 65% 30%, black, transparent 68%);
+    linear-gradient(rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 65% 30%, black 10%, transparent 75%);
 }
 
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel:hover {
+  border-color: rgba(34, 211, 238, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(34, 211, 238, 0.06);
+}
+
+/* Input glow effect for forms */
+.input-glow {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.input-glow:focus {
+  border-color: var(--accent-cyan);
+  outline: none;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.18);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+/* Typewriter cursor */
 .typing-line {
   overflow: hidden;
   white-space: nowrap;
@@ -51,6 +106,28 @@ select {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* Pulsing background glow overlay */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: pulse-ambient 8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-ambient {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.12;
+  }
+  100% {
+    transform: scale(1.15) translate(10px, -15px);
+    opacity: 0.22;
   }
 }
 

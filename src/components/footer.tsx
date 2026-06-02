@@ -26,8 +26,8 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-cyan-200">Pages</h3>
             <div className="mt-3 grid gap-2">
-              {navItems.slice(0, 6).map((item) => (
-                <Link key={item.href} href={item.href} className="text-sm text-slate-400 hover:text-cyan-200">
+              {navItems.map((item) => (
+                <Link key={item.href} href={item.href} className="text-sm text-slate-400 hover:text-cyan-200 transition">
                   {item.label}
                 </Link>
               ))}
