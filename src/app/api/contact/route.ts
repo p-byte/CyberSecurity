@@ -18,7 +18,7 @@ const contactFormSchema = z.object({
     .regex(/^[+]?[0-9\s-]{10,18}$/, { message: "Invalid characters in phone number." })
     .transform((val) => val.trim()),
   course: z
-    .enum(["Professional", "Enterprise", "General Enquiry"] as const),
+    .enum(["Cybersecurity Program", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program", "General Enquiry"] as const),
   message: z
     .string()
     .min(10, { message: "Message must be at least 10 characters." })
@@ -50,8 +50,44 @@ export async function POST(request: Request) {
     // 4. Extract validated data (safe & sanitized)
     const { name, email, phone, course, message } = result.data;
 
-    // 5. In a real-world scenario, you would save this to a database
-    // or trigger an email dispatch/webhook notifications here.
+    const leadEndpoint = process.env.SYLLABUS_LEAD_ENDPOINT;
+    if (!leadEndpoint) {
+      return NextResponse.json(
+        { success: false, message: "Enrollment storage is not configured yet." },
+        { status: 503 },
+      );
+    }
+
+    let sheetResponse: Response;
+    try {
+      sheetResponse = await fetch(leadEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          course,
+          message,
+          source: "enrollment-form",
+          submittedAt: new Date().toISOString(),
+        }),
+        redirect: "follow",
+        cache: "no-store",
+        signal: AbortSignal.timeout(10_000),
+      });
+    } catch (error) {
+      console.error("[API Contact Sheet Timeout]", error);
+      return NextResponse.json(
+        { success: false, message: "Enrollment storage is temporarily unavailable. Please try again shortly." },
+        { status: 502 },
+      );
+    }
+
+    if (!sheetResponse.ok) {
+      throw new Error(`Enrollment storage returned HTTP ${sheetResponse.status}`);
+    }
+
     console.log(`[API Contact Inquiry Success]`, {
       timestamp: new Date().toISOString(),
       name,
@@ -68,7 +104,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: true,
-        message: "Your inquiry has been logged successfully.",
+        message: "Your enrollment request has been received successfully.",
         referenceId: refId,
         data: { name, email, course },
       },

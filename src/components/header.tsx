@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, ShieldCheck, X } from "lucide-react";
 import { useState } from "react";
@@ -18,11 +19,11 @@ export function Header() {
       <Container>
         <nav className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-semibold text-white group">
-            <span className="grid size-9 place-items-center rounded border border-cyan-300/40 bg-cyan-300/10 text-cyan-200 transition group-hover:border-cyan-300 group-hover:bg-cyan-300/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.25)]">
-              <ShieldCheck size={20} />
+            <span className="grid size-10 place-items-center overflow-hidden rounded border border-cyan-300/40 bg-white p-0.5 transition group-hover:border-cyan-300 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.25)]">
+              <Image src="/cvsi-logo.png" alt="CyberVSI logo" width={40} height={40} className="size-full object-contain" priority />
             </span>
             <span className="bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent group-hover:text-cyan-200 transition">
-              Cyber security Academy
+              CyberVSI
             </span>
           </Link>
 

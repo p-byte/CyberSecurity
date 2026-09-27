@@ -23,8 +23,12 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: [{ url: "/cybervsi-favicon.svg", type: "image/svg+xml" }],
+    apple: "/cvsi-logo.png",
+  },
   applicationName: siteConfig.name,
-  authors: [{ name: "Cyber security Academy" }],
+  authors: [{ name: "CyberVSI - Cyber Vision Software Institute" }],
   keywords: [
     "cybersecurity course",
     "SOC training",

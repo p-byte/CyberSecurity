@@ -1,29 +1,30 @@
 import { Bug, Cloud, Code2, LockKeyhole, Radar, ServerCog, ShieldCheck, TerminalSquare, Trophy } from "lucide-react";
 
 export const siteConfig = {
-  name: "Cyber security Academy",
+  name: "CyberVSI",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://pruthvicyberacademy.com",
   description:
-    "Industry-oriented cybersecurity training in India covering SOC operations, VAPT, ethical hacking, cloud security, and bug bounty workflows.",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "nemanipruthvi.krishna@gmail.com",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_URL ?? "https://wa.me/919740781976",
+    "Four industry-oriented career programs in India: cybersecurity, full stack development, Microsoft business applications, and cloud DevSecOps.",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "connect@cybervsi.com",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_URL ?? "https://wa.me/919180399906",
   telegram: process.env.NEXT_PUBLIC_TELEGRAM_URL ?? "https://t.me/pruthvicyberacademy",
-  linkedin: "https://www.linkedin.com/in/pruthvi-krishna-chowdary-3b5622208",
-  enrollmentForm:
-    process.env.NEXT_PUBLIC_GOOGLE_FORM_URL ||
-    "https://docs.google.com/forms/d/e/1FAIpQLScoXyN2EDoq-9c9pn1SLag7vMq8BEqn0ugBwJACrf57CDTQMg/viewform",
-  phone: "+91 9740781976",
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "",
+  enrollmentForm: "/enroll",
+  phone: "+91 9180399906",
   twitter: "https://x.com/pruthvicyber",
   github: "https://github.com/pruthvicyber",
+  facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "https://www.facebook.com/share/19EEZP6EGw/",
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://www.instagram.com/cybervsi?stkn=MXBwdm1hNmF1YzhzbA==",
+  syllabusLeadEndpoint: process.env.SYLLABUS_LEAD_ENDPOINT ?? "https://script.google.com/macros/s/AKfycbxL0LdKmPoTWTCM80BKIp_I8MfWjazFNU8yyPu8Kq2XAGtmq-9FaiYblDyJm6UsH1d0/exec",
 };
 
 export const trainer = {
-  name: "N Pruthvi Krishna",
-  role: "Security Engineer at Flipkart",
-  experience: ["3+ years of cybersecurity experience", "2+ years of cybersecurity teaching experience"],
-  linkedin: siteConfig.linkedin,
-  bio: "N Pruthvi Krishna is a Security Engineer with hands-on experience in SOC operations, SIEM, endpoint security, threat analysis, vulnerability management, and offensive security methodologies. He has trained students and professionals with practical real-world cybersecurity scenarios and industry-oriented training.",
-  specialties: ["SOC operations", "SIEM", "Endpoint security", "Threat analysis", "Vulnerability management", "Offensive security"],
+  name: "N Durga Prasad",
+  role: "Head of Business Development",
+  experience: ["CyberVSI business development and learner engagement"],
+  linkedin: "",
+  bio: "N Durga Prasad leads business development at CyberVSI, helping learners discover the right career program and connect with practical, industry-oriented training opportunities.",
+  specialties: ["Industry partnerships", "Learner engagement", "Program outreach", "Career guidance"],
 };
 
 export const mentors = [
@@ -34,6 +35,7 @@ export const mentors = [
     bio: trainer.bio,
     specialties: trainer.specialties,
     linkedin: trainer.linkedin,
+    program: "Cybersecurity Program",
   },
   {
     name: "Rambabu",
@@ -41,6 +43,23 @@ export const mentors = [
     experience: ["3+ years experience in VAPT"],
     bio: "Rambabu is a VAPT specialist with strong expertise in penetration testing, vulnerability assessment, web application security, and API security testing with 3+ years of hands-on experience.",
     specialties: ["Web Application Security", "API Security Testing", "Vulnerability Assessment", "Penetration Testing", "Security Reporting"],
+    program: "Cybersecurity Program",
+  },
+  {
+    name: "Naga Haneesh",
+    role: "Full Stack Developer Mentor",
+    experience: ["Full stack development mentor", "Guided project and deployment support"],
+    bio: "Naga Haneesh mentors learners through the full stack developer pathway, with practical guidance across JavaScript, backend APIs, databases, React interfaces, deployment, and portfolio projects.",
+    specialties: ["JavaScript", "Node.js & Express", "React", "PostgreSQL", "API Development", "Deployment"],
+    program: "Full Stack Developer Program",
+  },
+  {
+    name: "Shivaramakrishna M",
+    role: "Senior Corporate Trainer & SME - Microsoft Dynamics 365 & Power Platform",
+    experience: ["7 years of total industry experience", "Corporate trainer and technical mentor"],
+    bio: "Shivaramakrishna M is a Microsoft Dynamics 365 and Power Platform subject matter expert who bridges enterprise consulting, architecture, and practical training. He delivers project-centric learning across Dataverse, Power Apps, Power Automate, Copilot Studio, AI Builder, Azure Functions, C# plugins, JavaScript, REST APIs, and Azure DevOps ALM.",
+    specialties: ["Dynamics 365 CE and Dataverse", "Power Apps and Power Automate", "C# plugins and JavaScript", "Copilot Studio and AI Builder", "Azure DevOps ALM", "REST API and Azure Functions"],
+    program: "Dynamics 365 & Power Platform Program",
   },
 ];
 
@@ -57,10 +76,10 @@ export const navItems = [
 ];
 
 export const stats = [
-  { value: "3+", label: "Years Industry Experience" },
-  { value: "2+", label: "Years Teaching Experience" },
-  { value: "SOC + VAPT", label: "Real SOC & VAPT Training" },
-  { value: "Labs", label: "Practical Hands-On Labs" },
+  { value: "4", label: "Career Programs" },
+  { value: "5+", label: "Years Mentor Experience" },
+  { value: "SOC + VAPT", label: "Cybersecurity Practical Training" },
+  { value: "Full Stack", label: "Build and Deploy Projects" },
 ];
 
 export const technologies = [
@@ -198,19 +217,105 @@ export const curriculumTracks = [
   },
 ];
 
+export const fullStackModules = [
+  { title: "JavaScript & Backend Foundations", icon: Code2, weeks: "Weeks 1-4", summary: "Understand the web request lifecycle, build strong JavaScript fundamentals, and create Node.js and Express REST APIs.", sessions: ["Internet & Web Fundamentals", "JavaScript Fundamentals", "Advanced JavaScript", "Introduction to Node.js", "Express.js Fundamentals"] },
+  { title: "Database Development", icon: ServerCog, weeks: "Weeks 5-8", summary: "Design relational data models with PostgreSQL, then build authentication and production-ready backend security controls.", sessions: ["PostgreSQL Fundamentals", "Database Design", "Authentication with bcrypt, JWT and RBAC", "Backend Security with Helmet, CORS, rate limiting and Multer"] },
+  { title: "Frontend Development", icon: TerminalSquare, weeks: "Weeks 9-11", summary: "Build responsive React interfaces, connect APIs, and create protected dashboards with practical application flows.", sessions: ["React Fundamentals", "Routing & API Integration", "Authentication UI & Dashboard"] },
+  { title: "Production Deployment", icon: Cloud, weeks: "Week 12", summary: "Use Git and GitHub confidently, then deploy applications through VPS, Vercel, Nginx and PM2 workflows.", sessions: ["Deployment & Git"] },
+  { title: "Capstone Project", icon: Trophy, weeks: "Week 13", summary: "Ship a portfolio-ready full stack project that demonstrates frontend, backend, database and deployment skills.", sessions: ["Capstone Project"] },
+];
+
+export const d365Modules = [
+  { title: "Microsoft Power Platform", weeks: "8-10 weeks", icon: Cloud, summary: "Power Platform foundations, Dataverse, Canvas and Model-Driven Apps, Power Automate, Power BI, solutions, ALM, Copilot Studio and Power Pages." },
+  { title: "Dynamics 365 Sales", weeks: "4-5 weeks", icon: Radar, summary: "CRM fundamentals, lead-to-order sales processes, product catalogs, pipeline management, sales productivity, configuration and automation." },
+  { title: "Dynamics 365 Customer Service", weeks: "4-5 weeks", icon: ServerCog, summary: "Case management, queues, routing, SLAs, entitlements, knowledge bases, omnichannel support, Copilot and service analytics." },
+  { title: "Dynamics 365 Finance & Operations", weeks: "8-10 weeks", icon: Trophy, summary: "ERP fundamentals, finance, supply chain, GST configuration, data entities, OData, Power BI, Power Automate and optional X++ foundations." },
+];
+
+export const cloudDevSecOpsModules = [
+  { title: "Cloud Foundations & IAM", weeks: "Weeks 1-3", icon: Cloud, summary: "Build secure cloud foundations across networking, identity, access policies, secrets, logging, and least-privilege design.", sessions: ["Cloud service models", "VPC and network security", "IAM and least privilege", "Secrets and key management"] },
+  { title: "DevSecOps & CI/CD Security", weeks: "Weeks 4-6", icon: Code2, summary: "Integrate security into delivery pipelines with Git, SAST, dependency checks, container scanning, and release gates.", sessions: ["Secure Git workflows", "SAST and SCA", "Container image security", "Pipeline security gates"] },
+  { title: "Cloud Detection & Response", weeks: "Weeks 7-9", icon: ShieldCheck, summary: "Monitor cloud workloads, investigate alerts, centralize logs, and create response playbooks for realistic incidents.", sessions: ["Cloud audit logs", "Detection engineering", "SIEM integration", "Incident response playbooks"] },
+  { title: "Infrastructure as Code & Capstone", weeks: "Weeks 10-12", icon: TerminalSquare, summary: "Automate repeatable infrastructure and ship a secure cloud deployment with evidence, documentation, and a security review.", sessions: ["Terraform fundamentals", "Policy as code", "Secure deployment review", "Cloud security capstone"] },
+];
+
 export const pricingPlans = [
   {
-    name: "Professional",
-    price: "INR 19,000",
-    description: "For learners who want SOC plus offensive security depth.",
-    featured: true,
-    features: ["Linux, Kali & networking foundations", "Burp Suite and OWASP labs", "SOC and SIEM workflows", "Bug bounty methodology", "Portfolio-ready reports"],
+    slug: "cybersecurity",
+    name: "Cybersecurity Program",
+    description: "Industry-oriented training for learners targeting SOC, VAPT, security engineering and offensive security roles.",
+    rating: "4.9/5",
+    schedule: "Monday-Friday, 8:00 PM-10:00 PM",
+    featured: false,
+    mentor: "N Durga Prasad & Rambabu",
+    features: ["Networking, Linux and Kali foundations", "Recon, Burp Suite and OWASP labs", "SOC, SIEM and incident response workflows", "Cloud security and bug bounty methodology", "Portfolio-ready security reports"],
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    description: "Team training with custom scenarios and reporting.",
-    features: ["Role-based learning tracks", "Private batch scheduling", "Cloud security workshops", "Progress reporting", "Custom lab scenarios"],
+    slug: "full-stack-developer",
+    name: "Full Stack Developer Program",
+    description: "A practical path from JavaScript and backend foundations to React, secure APIs, deployment and a capstone project.",
+    rating: "4.8/5",
+    schedule: "Monday-Friday, 7:00 AM-8:00 AM; Saturday-Sunday, 9:00 AM-11:00 AM",
+    featured: false,
+    mentor: "Naga Haneesh",
+    features: ["JavaScript, Node.js and Express", "PostgreSQL and database design", "React interfaces and API integration", "Authentication and backend security", "Deployment plus portfolio-ready capstone"],
+  },
+  {
+    slug: "dynamics-365-power-platform",
+    name: "Dynamics 365 & Power Platform Program",
+    description: "Business application training across Power Platform, Dynamics 365 Sales, Customer Service, and Finance & Operations.",
+    rating: "4.8/5",
+    schedule: "Schedule confirmed with the institute after enrollment",
+    featured: false,
+    mentor: "Shivaramakrishna M",
+    features: ["Power Apps, Power Automate and Power BI", "Dataverse, security and ALM", "Dynamics 365 Sales and CRM workflows", "Customer Service case management and analytics", "Finance, supply chain and capstone scenarios"],
+  },
+  {
+    slug: "cloud-devsecops",
+    name: "Cloud & DevSecOps Program",
+    description: "Build secure cloud and delivery skills across IAM, CI/CD, containers, monitoring, infrastructure as code, and incident response.",
+    rating: "4.8/5",
+    schedule: "Schedule confirmed with the institute after enrollment",
+    featured: false,
+    mentor: "Shivaramakrishna M",
+    features: ["Cloud networking and IAM foundations", "DevSecOps pipelines and security gates", "Container and dependency security", "Cloud monitoring and incident response", "Infrastructure as code capstone"],
+  },
+];
+
+export const programs = pricingPlans;
+
+export const courseCatalog = [
+  {
+    slug: "cybersecurity",
+    name: "Cybersecurity Program",
+    description: "Practical SOC, VAPT, SIEM, cloud security, ethical hacking, and bug bounty training with mentor-led labs.",
+    mentor: "N Durga Prasad & Rambabu",
+    syllabusUrl: process.env.NEXT_PUBLIC_CYBER_SYLLABUS_URL || "https://docs.google.com/document/d/1t9li8CfrEAX7RhJNDGDf3mhBGNDOs3KGTqLoUsmAb5c/edit?usp=sharing",
+    modules: curriculumModules.map((module) => module.title),
+  },
+  {
+    slug: "full-stack-developer",
+    name: "Full Stack Developer Program",
+    description: "Build responsive applications from JavaScript and backend foundations through React, databases, deployment, and a capstone.",
+    mentor: "Naga Haneesh",
+    syllabusUrl: process.env.NEXT_PUBLIC_FULL_STACK_SYLLABUS_URL || "https://docs.google.com/document/d/1EmnQr6KptUdBWv5bYf4q3xzsWHB8a676SQ6sFzAFloI/edit?usp=sharing",
+    modules: fullStackModules.map((module) => `${module.title} (${module.weeks})`),
+  },
+  {
+    slug: "dynamics-365-power-platform",
+    name: "Dynamics 365 & Power Platform Program",
+    description: "Learn Power Platform and Dynamics 365 Sales, Customer Service, and Finance & Operations through business scenarios and capstones.",
+    mentor: "Shivaramakrishna M",
+    syllabusUrl: process.env.NEXT_PUBLIC_D365_SYLLABUS_URL || "https://docs.google.com/document/d/1cdUFYG8imSe5brwrLTt-f0-ZqZ-496AcB0MX770L6-4/edit?usp=sharing",
+    modules: d365Modules.map((module) => `${module.title} (${module.weeks})`),
+  },
+  {
+    slug: "cloud-devsecops",
+    name: "Cloud & DevSecOps Program",
+    description: "Build secure cloud and delivery skills across IAM, CI/CD, containers, monitoring, infrastructure as code, and incident response.",
+    mentor: "CyberVSI Mentor Team",
+    syllabusUrl: process.env.NEXT_PUBLIC_CLOUD_DEVSECOPS_SYLLABUS_URL ?? "",
+    modules: cloudDevSecOpsModules.map((module) => `${module.title} (${module.weeks})`),
   },
 ];
 
@@ -290,7 +395,7 @@ export const blogPosts = [
     excerpt: "A practical lab checklist for beginners learning Linux, Kali, Burp Suite, and SIEM workflows safely.",
     date: "2026-05-20",
     readTime: "6 min read",
-    author: "N Pruthvi Krishna",
+    author: "CyberVSI Editorial Team",
     category: "Labs",
     content: "Setting up a dedicated sandbox environment is one of the most critical steps in learning cybersecurity. A properly configured lab allows you to test exploits, analyze malware, and monitor traffic without risking the security of your primary system or violating legal boundaries.\n\n### Step 1: Choosing a Hypervisor\nTo run multiple systems securely, use a Type-2 hypervisor like VirtualBox or VMware Workstation. These tools create a virtual sandbox where virtual machines (VMs) are isolated from your physical host.\n\n### Step 2: Setting Up Kali Linux (Offensive Node)\nDownload the official Kali Linux VM image. Kali comes preloaded with hundreds of pentesting utilities including Nmap, Metasploit, and Burp Suite. Secure the default credentials (change `kali:kali` instantly) and keep your packages updated.\n\n### Step 3: Installing a Defensive Monitoring Target\nInstall a lightweight Linux VM or Wazuh agent to act as your defensive target. By sending logs to an ELK stack or Splunk instance, you can practice reading logs and correlating events. Focus on understanding how attack indicators look inside auth logs (`/var/log/auth.log`).\n\n### Step 4: Network Isolation\nConfigure your hypervisor's network settings to 'Host-Only' or a custom 'NAT Network' that does not allow internal VMs to scan your home network. Safety and authorization are the gold standards of professional cybersecurity.",
   },
@@ -300,7 +405,7 @@ export const blogPosts = [
     excerpt: "Understand the mindset, tools, and daily workflows behind defensive monitoring and offensive testing.",
     date: "2026-05-18",
     readTime: "8 min read",
-    author: "N Pruthvi Krishna",
+    author: "CyberVSI Editorial Team",
     category: "Career Guidance",
     content: "Students starting in cybersecurity often wonder whether they should focus on offensive testing (such as Bug Bounties) or defensive operations (like working in a Security Operations Center - SOC). Both career paths are highly rewarding but require entirely different mindsets and workflows.\n\n### The SOC Analyst: The Cyber Guardian\nA SOC Analyst focuses on defense, monitoring, and incident response. The daily workflow consists of triaging alerts, investigating log sources (SIEM), and containing active threats. SOC work requires a analytical mind, deep understanding of corporate networks, and familiarity with attack signatures.\n\n* **Key Tools:** Splunk, Wazuh, Wireshark, TheHive, Firewalls, EDR agents.\n* **Core Skill:** Differentiating standard traffic patterns from malicious activity.\n\n### The Bug Bounty Hunter: The Cyber Explorer\nA Bug Bounty Hunter focuses on offensive security, trying to discover security flaws in web apps, APIs, or cloud assets before malicious actors do. This path requires extreme persistence, out-of-the-box thinking, and deep specialized knowledge of software vulnerabilities.\n\n* **Key Tools:** Burp Suite, SQLMap, Nmap, custom automation scripts.\n* **Core Skill:** Chaining minor findings to prove serious impact.\n\n### Which One Should You Choose?\nWe highly recommend starting with a blended foundation. Knowing how defensive SOC analysts write rules makes you a better offensive pentester, and knowing how hackers bypass filters makes you a better defender. Choose defensive tracks if you love forensics and system engineering, or offensive tracks if you love custom exploration and testing.",
   },

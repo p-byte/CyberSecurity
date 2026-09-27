@@ -9,24 +9,24 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "About",
   path: "/about",
-  description: "Learn about Cyber security Academy, trainer N Pruthvi Krishna, and mentor-led cybersecurity training.",
+  description: "Meet the mentors behind CyberVSI, Cyber Vision Software Institute, and explore practical cybersecurity and full stack developer programs.",
 });
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="About" title="Cybersecurity training built for real operating environments" description="Cyber security Academy helps learners move from theory to practical skill with SOC, VAPT, SIEM, cloud security, offensive testing, and clear reporting." />
+      <PageHero eyebrow="About CyberVSI" title="Cyber Vision Software Institute" description="CyberVSI helps learners move from theory to practical skill through guided cybersecurity and full stack developer programs, live sessions, and portfolio-focused projects." />
       <Section>
         <Container>
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded border border-cyan-300/10 bg-white/[0.035] p-6">
-              <h2 className="text-2xl font-semibold text-white">Mission</h2>
+              <h2 className="text-2xl font-semibold text-white">Our Mission</h2>
               <p className="mt-4 leading-7 text-slate-300">
-                Make cybersecurity education practical, ethical, and job-ready for beginners and working professionals. The academy focuses on repeatable methodology, safe labs, and communication skills that security teams expect.
+                Make technical education practical, ethical, and job-ready for beginners and working professionals. The academy brings together specialist mentors, structured lessons, safe labs, and communication skills that modern teams expect.
               </p>
             </div>
             <div className="rounded border border-cyan-300/10 bg-white/[0.035] p-6">
-              <h2 className="text-2xl font-semibold text-white">About Trainer</h2>
+              <h2 className="text-2xl font-semibold text-white">About CyberVSI Leadership</h2>
               <p className="mt-4 leading-7 text-slate-300">{trainer.bio}</p>
             </div>
           </div>

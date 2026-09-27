@@ -42,3 +42,10 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# local inspection artifacts
+/tmp/
+/.codex-spreadsheet-inspect/
+
+# Google Apps Script local project metadata
+/google-apps-script/.clasp.json

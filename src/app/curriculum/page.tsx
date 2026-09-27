@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, ChevronRight, BookOpen, Clock, Calendar, Sparkles } from "lucide-react";
+import { CheckCircle2, ChevronRight, BookOpen, Calendar, Sparkles } from "lucide-react";
 import { CTASection } from "@/components/cta-section";
 import { ModuleCard, PageHero } from "@/components/cards";
 import { Container, Section } from "@/components/container";
-import { curriculumModules, curriculumTracks } from "@/content/site";
+import { curriculumModules, curriculumTracks, fullStackModules, d365Modules, cloudDevSecOpsModules } from "@/content/site";
 
 export default function CurriculumPage() {
   const [activeModule, setActiveModule] = useState<number | null>(1);
@@ -15,8 +15,8 @@ export default function CurriculumPage() {
     <>
       <PageHero
         eyebrow="Syllabus"
-        title="12-week cybersecurity syllabus from foundations to AI-driven defense"
-        description="The program is built around the IITR CYB topic workbook coverage, teaching you core networking, defensive triage, offensive exploitation verification, and AI-driven defense workflows."
+        title="Four practical curricula for four career paths"
+        description="Choose cybersecurity, full stack development, Microsoft Dynamics 365 and Power Platform, or cloud DevSecOps training, with practical modules and capstone-focused learning."
       />
       
       {/* Grid Summary Cards */}
@@ -27,6 +27,55 @@ export default function CurriculumPage() {
             {curriculumModules.map((module) => (
               <ModuleCard key={module.title} {...module} />
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-cyan-300/10 bg-slate-950/40 relative overflow-hidden">
+        <Container>
+          <div className="mb-10">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200">
+              <Sparkles size={12} className="text-cyan-300" />
+              <span>Cloud & DevSecOps Program</span>
+            </div>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Secure cloud delivery from commit to production</h2>
+            <p className="mt-3 max-w-3xl text-slate-400">Build practical capability across cloud identity, secure pipelines, containers, detection, infrastructure as code, and a security-focused capstone.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {cloudDevSecOpsModules.map((module) => <ModuleCard key={module.title} title={`${module.title} · ${module.weeks}`} summary={module.summary} icon={module.icon} />)}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-cyan-300/10 bg-slate-950/40 relative overflow-hidden">
+        <div className="ambient-glow absolute top-[20%] right-[15%] size-[260px] bg-cyan-500/5 blur-[85px]" />
+        <Container>
+          <div className="mb-10">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200">
+              <Sparkles size={12} className="text-cyan-300" />
+              <span>Full Stack Developer Program</span>
+            </div>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Build, secure and deploy real applications</h2>
+            <p className="mt-3 max-w-3xl text-slate-400">The 13-week curriculum from the supplied course outline moves from web fundamentals to a complete portfolio-ready capstone.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {fullStackModules.map((module) => <ModuleCard key={module.title} title={`${module.title} · ${module.weeks}`} summary={module.summary} icon={module.icon} />)}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-cyan-300/10 bg-slate-950/40 relative overflow-hidden">
+        <Container>
+          <div className="mb-10">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200">
+              <Sparkles size={12} className="text-cyan-300" />
+              <span>Dynamics 365 & Power Platform Program</span>
+            </div>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Business applications built around real scenarios</h2>
+            <p className="mt-3 max-w-3xl text-slate-400">The attached curriculum covers four independent tracks with hands-on labs, capstones, certification guidance, and interview preparation.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {d365Modules.map((module) => <ModuleCard key={module.title} title={`${module.title} · ${module.weeks}`} summary={module.summary} icon={module.icon} />)}
           </div>
         </Container>
       </Section>
@@ -121,7 +170,7 @@ export default function CurriculumPage() {
         </Container>
       </Section>
       
-      <CTASection title="Ready to follow the complete syllabus?" description="Fill the Google Form to join the next cybersecurity batch and get guidance on the right starting point." />
+      <CTASection title="Ready to choose your program?" description="Open the CyberVSI enrollment form, select one of the four career programs, and the academy team will confirm your next steps." />
     </>
   );
 }

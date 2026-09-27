@@ -26,6 +26,9 @@ export function MentorCard({ mentor, index }: { mentor: MentorProfile; index: nu
       </div>
       <h3 className="mt-5 text-2xl font-semibold text-white">{mentor.name}</h3>
       <p className="mt-1 text-cyan-100">{mentor.role}</p>
+      {"program" in mentor && mentor.program ? (
+        <p className="mt-3 inline-flex rounded border border-cyan-300/20 bg-cyan-300/10 px-2.5 py-1 text-xs font-semibold text-cyan-100">{mentor.program}</p>
+      ) : null}
       <div className="mt-4 grid gap-2">
         {mentor.experience.map((item) => (
           <p key={item} className="text-sm text-slate-400">{item}</p>
@@ -45,7 +48,7 @@ export function MentorCard({ mentor, index }: { mentor: MentorProfile; index: nu
 
 export function MentorGrid({ mentors }: { mentors: MentorProfile[] }) {
   return (
-    <div className="grid gap-5 lg:grid-cols-2">
+    <div className="grid gap-5 lg:grid-cols-3">
       {mentors.map((mentor, index) => (
         <MentorCard key={mentor.name} mentor={mentor} index={index} />
       ))}

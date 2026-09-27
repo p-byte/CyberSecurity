@@ -8,7 +8,7 @@ export const metadata: Metadata = createMetadata({ title: "Privacy Policy", path
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <PageHero eyebrow="Privacy" title="Privacy Policy" description="How Cyber security Academy handles learner enquiries and course communication data." />
+      <PageHero eyebrow="Privacy" title="Privacy Policy" description="How CyberVSI handles learner enquiries and course communication data." />
       <Section>
         <Container>
           <div className="max-w-3xl space-y-5 leading-8 text-slate-300">

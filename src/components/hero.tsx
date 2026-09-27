@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Send, Terminal, Shield } from "lucide-react";
-import { siteConfig } from "@/content/site";
+import { siteConfig, trainer } from "@/content/site";
 import { EnrollmentLink } from "./enrollment-link";
 import { ExternalLink } from "./external-link";
 
@@ -40,15 +40,15 @@ export function Hero() {
             <span>Real-World SOC & Offensive Security Labs</span>
           </div>
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Master <span className="bg-gradient-to-r from-cyan-400 via-teal-200 to-emerald-400 bg-clip-text text-transparent">Cybersecurity</span>
-            <br />From Industry Experts
+            Build Your Career
+            <br /><span className="bg-gradient-to-r from-cyan-400 via-teal-200 to-emerald-400 bg-clip-text text-transparent">With Industry Experts</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-            IITR CYB Curriculum-Oriented Cybersecurity Training With Practical, Portfolio-Ready Labs
+            Industry-Oriented Cybersecurity Training With Real-World Practical Labs
           </p>
           <p className="mt-4 max-w-xl leading-7 text-slate-400">
-            Learn defensive SOC workflows, incident response, SIEM, and offensive VAPT testing directly from{" "}
-            <span className="font-semibold text-slate-200">N Pruthvi Krishna</span>, Security Engineer at Flipkart.
+            Choose practical Cybersecurity or Full Stack Developer training with mentor support, guided labs and portfolio-ready projects. Connect with{" "}
+            <span className="font-semibold text-slate-200">{trainer.name}</span>, {trainer.role.toLowerCase()} at CyberVSI.
           </p>
           
           <div className="mt-8 flex flex-col gap-3.5 sm:flex-row">

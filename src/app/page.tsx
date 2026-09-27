@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Check, ChevronRight, MessageCircle, Star, Sparkles, TerminalSquare, ShieldCheck } from "lucide-react";
@@ -11,6 +12,7 @@ import { ExternalLink } from "@/components/external-link";
 import { Hero } from "@/components/hero";
 import { MentorGrid } from "@/components/mentor-card";
 import { ModuleCard } from "@/components/cards";
+import { SyllabusDownloadButton } from "@/components/syllabus-download";
 import {
   careerOutcomes,
   curriculumModules,
@@ -26,6 +28,7 @@ import {
   testimonials,
   trainer,
   whyChooseProgram,
+  courseCatalog,
 } from "@/content/site";
 
 export default function Home() {
@@ -34,9 +37,9 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Course",
-    name: "Cyber security Academy Cybersecurity Training",
-    description: "IITR CYB oriented cybersecurity training with SOC, VAPT, ethical hacking, SIEM, cloud security, and bug bounty labs.",
-    provider: { "@type": "Organization", name: "Cyber security Academy" },
+    name: "CyberVSI Career Programs",
+    description: "Practical cybersecurity and full stack developer programs with guided labs, mentor support and portfolio projects.",
+    provider: { "@type": "Organization", name: "CyberVSI - Cyber Vision Software Institute" },
     instructor: { "@type": "Person", name: trainer.name, jobTitle: trainer.role },
   };
 
@@ -68,25 +71,34 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* About Trainer Section */}
+      {/* Lead Mentor Section */}
       <Section className="border-y border-cyan-300/10 bg-slate-950/40 relative overflow-hidden">
         <div className="ambient-glow absolute bottom-[-10%] right-[10%] size-[300px] bg-emerald-500/5 blur-[90px]" />
         <Container>
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
+              <Image
+                src="/n-durga-prasad.png"
+                alt="N Durga Prasad, Head of Business Development at CyberVSI"
+                width={160}
+                height={160}
+                className="mb-6 size-32 rounded-2xl border border-cyan-300/25 object-cover object-top shadow-xl shadow-cyan-950/30 sm:size-36"
+              />
               <div className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200">
                 <Sparkles size={12} className="text-cyan-300" />
-                <span>Trainer Credentials</span>
+                <span>CyberVSI Leadership</span>
               </div>
               <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">{trainer.name}</h2>
               <p className="mt-2 text-lg font-medium text-cyan-300/90">{trainer.role}</p>
               <p className="mt-5 leading-7 text-slate-300">{trainer.bio}</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <ExternalLink href={trainer.linkedin} className="inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-300/35 bg-white/[0.02] px-5 py-3 font-semibold text-cyan-100 hover:bg-cyan-300/10 transition duration-200">
-                  LinkedIn Profile <ArrowRight size={18} />
-                </ExternalLink>
+                {trainer.linkedin ? (
+                  <ExternalLink href={trainer.linkedin} className="inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-300/35 bg-white/[0.02] px-5 py-3 font-semibold text-cyan-100 hover:bg-cyan-300/10 transition duration-200">
+                    LinkedIn Profile <ArrowRight size={18} />
+                  </ExternalLink>
+                ) : null}
                 <ExternalLink href={siteConfig.whatsapp} className="inline-flex items-center justify-center gap-2 rounded-lg bg-cyan-300 px-5 py-3 font-bold text-black hover:bg-cyan-200 shadow-md shadow-cyan-950 transition duration-200">
-                  <MessageCircle size={18} /> Contact Trainer
+                  <MessageCircle size={18} /> Contact
                 </ExternalLink>
               </div>
             </div>
@@ -121,7 +133,7 @@ export default function Home() {
             </div>
             <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Mentors & Experts</h2>
             <p className="mt-3 max-w-2xl leading-7 text-slate-400">
-              Go deep into defensive investigation and offensive exploit verification with instructors active in cybersecurity.
+              Learn from specialist mentors across cybersecurity and full stack development, with guided projects and practical feedback.
             </p>
           </div>
           <div className="mt-8">
@@ -329,9 +341,9 @@ export default function Home() {
             <div className="relative z-10 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Fast Enrollment</p>
-                <h2 className="mt-2 text-3xl font-extrabold text-white">Google Form Submission</h2>
+                <h2 className="mt-2 text-3xl font-extrabold text-white">CyberVSI Enrollment</h2>
                 <p className="mt-3 max-w-2xl text-slate-350">
-                  Fill the direct inquiry Google Form to queue your profile. The academy team will review details and confirm slot schedules.
+                  Complete the secure CyberVSI enrollment form to share your profile. The academy team will review your details and confirm the next batch schedule.
                 </p>
               </div>
               <EnrollmentLink className="inline-flex items-center justify-center gap-2 rounded-lg bg-cyan-300 px-6 py-3.5 font-bold text-black shadow-md shadow-cyan-950 transition hover:bg-cyan-200 active:scale-98">
@@ -374,30 +386,26 @@ export default function Home() {
               <Sparkles size={12} className="text-cyan-300" />
               <span>Tuition Packages</span>
             </div>
-            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Flexible Pricing Tiers</h2>
-            <p className="mt-3 text-slate-400">Choose the depth of training matching your career goals.</p>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Four Career-Focused Programs</h2>
+            <p className="mt-3 text-slate-400">Choose cybersecurity, software development, Microsoft business applications, or cloud DevSecOps, then enquire for the right learning plan.</p>
           </div>
           
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto items-stretch">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 max-w-7xl mx-auto items-stretch">
             {pricingPlans.map((plan) => {
-              const isProfessional = plan.name === "Professional";
+              const course = courseCatalog.find((item) => item.slug === plan.slug);
               return (
                 <article
                   key={plan.name}
-                  className={`relative flex flex-col justify-between rounded-2xl border p-8 backdrop-blur-md transition-all duration-300 ${
-                    isProfessional
-                      ? "border-cyan-300 bg-cyan-300/[0.04] shadow-[0_0_35px_rgba(34,211,238,0.16)] scale-102 z-10"
-                      : "border-cyan-300/10 bg-slate-900/40 hover:border-cyan-300/30"
-                  }`}
+                  className="relative flex flex-col justify-between rounded-2xl border border-cyan-300/15 bg-slate-900/40 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.04]"
                 >
-                  {isProfessional && (
-                    <div className="absolute top-4 right-4 inline-flex items-center gap-1 rounded-full bg-cyan-300 px-3 py-1 text-2xs font-extrabold uppercase tracking-wider text-black">
-                      <ShieldCheck size={11} /> Recommended
-                    </div>
-                  )}
                   <div>
                     <h3 className="text-2xl font-extrabold text-white tracking-tight">{plan.name}</h3>
-                    <p className="mt-4 text-4xl font-extrabold text-cyan-300 tracking-tight">{plan.price}</p>
+                    <p className="mt-4 text-lg font-bold text-cyan-200">Click to enquire for course details</p>
+                    <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-amber-300">
+                      <Star size={16} fill="currentColor" /> {plan.rating} learner rating
+                    </div>
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-cyan-200">Mentor: {plan.mentor}</p>
+                    <p className="mt-2 text-sm leading-6 text-slate-400">{plan.schedule}</p>
                     <p className="mt-4 text-sm leading-6 text-slate-350">{plan.description}</p>
                     
                     <ul className="mt-6 border-t border-white/5 pt-6 grid gap-3">
@@ -410,13 +418,11 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="mt-8">
-                    <EnrollmentLink className={`inline-flex w-full justify-center rounded-lg px-4 py-3.5 text-center text-sm font-bold shadow-md transition duration-200 hover:scale-[1.01] active:scale-99 ${
-                      isProfessional
-                        ? "bg-cyan-300 text-black shadow-cyan-950 hover:bg-cyan-200"
-                        : "border border-cyan-300/30 bg-slate-900/60 text-cyan-200 hover:bg-cyan-300/5 hover:border-cyan-300/60"
-                    }`}>
-                      Enroll Now
-                    </EnrollmentLink>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      <Link href={`/courses/${plan.slug}`} className="inline-flex items-center justify-center rounded-lg border border-cyan-300/30 bg-slate-950/60 px-4 py-3.5 text-center text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10">View Course</Link>
+                      <ExternalLink href={siteConfig.whatsapp} className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-400 px-4 py-3.5 text-center text-sm font-bold text-black transition hover:bg-emerald-300"><MessageCircle size={16} /> WhatsApp</ExternalLink>
+                      {course ? <SyllabusDownloadButton course={course} /> : null}
+                    </div>
                   </div>
                 </article>
               );
