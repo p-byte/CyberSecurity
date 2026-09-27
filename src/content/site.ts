@@ -29,12 +29,12 @@ export const trainer = {
 
 export const mentors = [
   {
-    name: trainer.name,
-    role: trainer.role,
-    experience: trainer.experience,
-    bio: trainer.bio,
-    specialties: trainer.specialties,
-    linkedin: trainer.linkedin,
+    name: "N Pruthvi Krishna",
+    role: "Cybersecurity Mentor",
+    experience: ["5+ years of cybersecurity work experience", "5+ years of cybersecurity teaching experience"],
+    bio: "N Pruthvi Krishna is a cybersecurity mentor who helps students build practical skills across SOC operations, SIEM, endpoint security, threat analysis, vulnerability management, and offensive security methodologies.",
+    specialties: ["SOC operations", "SIEM", "Endpoint security", "Threat analysis", "Vulnerability management", "Offensive security"],
+    linkedin: "https://www.linkedin.com/in/pruthvi-krishna-chowdary-3b5622208",
     program: "Cybersecurity Program",
   },
   {
@@ -247,7 +247,7 @@ export const pricingPlans = [
     rating: "4.9/5",
     schedule: "Monday-Friday, 8:00 PM-10:00 PM",
     featured: false,
-    mentor: "N Durga Prasad & Rambabu",
+    mentor: "N Pruthvi Krishna & Rambabu",
     features: ["Networking, Linux and Kali foundations", "Recon, Burp Suite and OWASP labs", "SOC, SIEM and incident response workflows", "Cloud security and bug bounty methodology", "Portfolio-ready security reports"],
   },
   {
@@ -289,7 +289,7 @@ export const courseCatalog = [
     slug: "cybersecurity",
     name: "Cybersecurity Program",
     description: "Practical SOC, VAPT, SIEM, cloud security, ethical hacking, and bug bounty training with mentor-led labs.",
-    mentor: "N Durga Prasad & Rambabu",
+    mentor: "N Pruthvi Krishna & Rambabu",
     syllabusUrl: process.env.NEXT_PUBLIC_CYBER_SYLLABUS_URL || "https://docs.google.com/document/d/1t9li8CfrEAX7RhJNDGDf3mhBGNDOs3KGTqLoUsmAb5c/edit?usp=sharing",
     modules: curriculumModules.map((module) => module.title),
   },
