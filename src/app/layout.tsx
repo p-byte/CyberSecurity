@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: [{ url: "/cybervsi-favicon.svg", type: "image/svg+xml" }],
-    apple: "/cvsi-logo.png",
+    icon: [{ url: "/cybervsi-favicon.png?v=2", type: "image/png" }],
+    apple: "/cybervsi-favicon.png",
   },
   applicationName: siteConfig.name,
   authors: [{ name: "CyberVSI - Cyber Vision Software Institute" }],
