@@ -19,6 +19,7 @@ type FormData = {
 };
 
 type Errors = Partial<Record<keyof FormData, string>>;
+type RequestType = "enrollment" | "demo";
 
 export function EnrollmentForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -32,6 +33,7 @@ export function EnrollmentForm() {
   const [success, setSuccess] = useState(false);
   const [referenceId, setReferenceId] = useState("");
   const [apiError, setApiError] = useState("");
+  const [requestType, setRequestType] = useState<RequestType>("enrollment");
 
   function validate(data: FormData): Errors {
     const next: Errors = {};
@@ -59,7 +61,10 @@ export function EnrollmentForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, message: "Enrollment request" }),
+        body: JSON.stringify({
+          ...formData,
+          message: requestType === "demo" ? "Demo class booking request" : "Enrollment request",
+        }),
       });
       const result = await response.json();
       if (!response.ok) {
@@ -84,9 +89,9 @@ export function EnrollmentForm() {
             <span className="mx-auto grid size-16 place-items-center rounded-full border border-emerald-300/30 bg-emerald-300/10 text-emerald-300">
               <CheckCircle2 size={32} />
             </span>
-            <h2 className="mt-6 text-2xl font-bold text-white">Enrollment request received</h2>
+            <h2 className="mt-6 text-2xl font-bold text-white">{requestType === "demo" ? "Demo class request received" : "Enrollment request received"}</h2>
             <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-400">
-              Thank you, {formData.name}. Our academy team will contact you about the {formData.course} schedule and next steps.
+              Thank you, {formData.name}. Our academy team will contact you about the {formData.course} {requestType === "demo" ? "demo class" : "schedule and next steps"}.
             </p>
             <p className="mt-5 font-mono text-xs text-cyan-300">Reference: {referenceId}</p>
             <a href="https://wa.me/919180399906" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-lg border border-emerald-300/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20">
@@ -100,11 +105,22 @@ export function EnrollmentForm() {
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Start your application</span>
             </div>
             <div>
-              <h2 className="text-2xl font-extrabold tracking-tight text-white">Tell us where you want to grow</h2>
-              <p className="mt-2 text-sm leading-6 text-slate-400">Share your basic details. A mentor will contact you with the right batch and learning plan.</p>
+              <h2 className="text-2xl font-extrabold tracking-tight text-white">{requestType === "demo" ? "Book a CyberVSI demo class" : "Tell us where you want to grow"}</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-400">{requestType === "demo" ? "Share your details and we will help arrange a demo class for your selected program." : "Share your basic details. A mentor will contact you with the right batch and learning plan."}</p>
             </div>
 
             {apiError ? <p role="alert" className="rounded-lg border border-red-400/20 bg-red-400/10 px-4 py-3 text-sm text-red-200">{apiError}</p> : null}
+
+            <div className="grid gap-2 sm:grid-cols-2" role="group" aria-label="Choose request type">
+              <button type="button" onClick={() => setRequestType("enrollment")} className={`rounded-lg border px-4 py-3 text-left transition ${requestType === "enrollment" ? "border-cyan-300/60 bg-cyan-300/10 text-cyan-100" : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-cyan-300/30"}`}>
+                <span className="block text-sm font-bold">Enroll in a program</span>
+                <span className="mt-1 block text-xs">Get batch and admission details</span>
+              </button>
+              <button type="button" onClick={() => setRequestType("demo")} className={`rounded-lg border px-4 py-3 text-left transition ${requestType === "demo" ? "border-cyan-300/60 bg-cyan-300/10 text-cyan-100" : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-cyan-300/30"}`}>
+                <span className="block text-sm font-bold">Book a demo class</span>
+                <span className="mt-1 block text-xs">Experience the learning approach</span>
+              </button>
+            </div>
 
             <div>
               <label htmlFor="enroll-name" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">Full name</label>
@@ -133,7 +149,7 @@ export function EnrollmentForm() {
             </div>
 
             <button type="submit" disabled={loading} className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cyan-300 px-5 py-3.5 text-sm font-bold text-slate-950 shadow-[0_0_24px_rgba(34,211,238,0.2)] transition hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60">
-              {loading ? <><Loader2 size={17} className="animate-spin" /> Sending securely...</> : <>Submit Enrollment <ArrowRight size={17} /></>}
+              {loading ? <><Loader2 size={17} className="animate-spin" /> Sending securely...</> : <>{requestType === "demo" ? "Book Demo Class" : "Submit Enrollment"} <ArrowRight size={17} /></>}
             </button>
             <p className="flex items-start gap-2 text-xs leading-5 text-slate-500"><ShieldCheck size={15} className="mt-0.5 shrink-0 text-cyan-300" /> Your details are used only to respond about CyberVSI programs. No payment is collected on this form.</p>
           </motion.form>
