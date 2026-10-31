@@ -24,6 +24,7 @@ export default function PricingPage() {
               <article key={plan.name} className="flex flex-col rounded border border-cyan-300/15 bg-white/[0.035] p-6 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/[0.04]">
                 <h2 className="text-2xl font-semibold text-white">{plan.name}</h2>
                 <p className="mt-3 text-lg font-semibold text-cyan-200">Click to enquire for course details</p>
+                {"price" in plan && plan.price ? <p className="mt-2 text-sm font-bold text-emerald-300">Program fee: {plan.price}</p> : null}
                 <div className="mt-4 flex flex-wrap items-center gap-4 text-sm">
                   <span className="inline-flex items-center gap-2 font-semibold text-amber-300">
                     <span className="inline-flex items-center gap-0.5" aria-label={`${plan.rating} learner rating`}>

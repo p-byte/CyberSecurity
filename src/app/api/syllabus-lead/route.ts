@@ -5,7 +5,7 @@ const schema = z.object({
   name: z.string().trim().min(2).max(100),
   email: z.string().trim().email().transform((value) => value.toLowerCase()),
   phone: z.string().trim().regex(/^[+]?[0-9\s-]{10,18}$/),
-  course: z.enum(["Cybersecurity Program", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program"]),
+  course: z.enum(["Cybersecurity Program", "SOC Mastery for VAPT Professionals", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program"]),
 });
 
 export async function POST(request: Request) {

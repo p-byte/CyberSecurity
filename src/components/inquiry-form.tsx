@@ -48,7 +48,7 @@ export function InquiryForm() {
         if (!phoneRegex.test(value.trim())) return "Please enter a valid phone number (e.g. +91 9876543210).";
         return "";
       case "course":
-        if (!["Cybersecurity Program", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program", "General Enquiry"].includes(value)) {
+        if (!["Cybersecurity Program", "SOC Mastery for VAPT Professionals", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program", "General Enquiry"].includes(value)) {
           return "Please select a valid course track.";
         }
         return "";
@@ -265,6 +265,7 @@ export function InquiryForm() {
                 className="w-full rounded-lg px-4 py-3 text-sm input-glow appearance-none cursor-pointer"
               >
                 <option value="Cybersecurity Program">Cybersecurity Program</option>
+                <option value="SOC Mastery for VAPT Professionals">SOC Mastery for VAPT Professionals</option>
                 <option value="Full Stack Developer Program">Full Stack Developer Program</option>
                 <option value="Dynamics 365 & Power Platform Program">Dynamics 365 & Power Platform Program</option>
                 <option value="Cloud & DevSecOps Program">Cloud & DevSecOps Program</option>

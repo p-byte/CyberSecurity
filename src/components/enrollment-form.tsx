@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const courses = [
   "Cybersecurity Program",
+  "SOC Mastery for VAPT Professionals",
   "Full Stack Developer Program",
   "Dynamics 365 & Power Platform Program",
   "Cloud & DevSecOps Program",

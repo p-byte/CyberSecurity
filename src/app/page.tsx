@@ -386,8 +386,8 @@ export default function Home() {
               <Sparkles size={12} className="text-cyan-300" />
               <span>Tuition Packages</span>
             </div>
-            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Four Career-Focused Programs</h2>
-            <p className="mt-3 text-slate-400">Choose cybersecurity, software development, Microsoft business applications, or cloud DevSecOps, then enquire for the right learning plan.</p>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Five Career-Focused Programs</h2>
+            <p className="mt-3 text-slate-400">Choose cybersecurity, SOC mastery, software development, Microsoft business applications, or cloud DevSecOps, then enquire for the right learning plan.</p>
           </div>
           
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 max-w-7xl mx-auto items-stretch">
@@ -401,6 +401,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-2xl font-extrabold text-white tracking-tight">{plan.name}</h3>
                     <p className="mt-4 text-lg font-bold text-cyan-200">Click to enquire for course details</p>
+                    {"price" in plan && plan.price ? <p className="mt-2 text-sm font-bold text-emerald-300">Program fee: {plan.price}</p> : null}
                     <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-amber-300">
                       <Star size={16} fill="currentColor" /> {plan.rating} learner rating
                     </div>

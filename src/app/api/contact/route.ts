@@ -18,7 +18,7 @@ const contactFormSchema = z.object({
     .regex(/^[+]?[0-9\s-]{10,18}$/, { message: "Invalid characters in phone number." })
     .transform((val) => val.trim()),
   course: z
-    .enum(["Cybersecurity Program", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program", "General Enquiry"] as const),
+    .enum(["Cybersecurity Program", "SOC Mastery for VAPT Professionals", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program", "General Enquiry"] as const),
   message: z
     .string()
     .min(10, { message: "Message must be at least 10 characters." })
