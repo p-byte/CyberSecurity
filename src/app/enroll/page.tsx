@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ArrowRight, CreditCard, MessageCircle, ShieldCheck } from "lucide-react";
 import { EnrollmentForm } from "@/components/enrollment-form";
-import { PageHero } from "@/components/cards";
 import { Container, Section } from "@/components/container";
 import { ExternalLink } from "@/components/external-link";
 import { siteConfig } from "@/content/site";
@@ -16,7 +15,13 @@ export const metadata: Metadata = createMetadata({
 export default function EnrollPage() {
   return (
     <>
-      <PageHero eyebrow="CyberVSI Enrollment" title="Choose your next move" description="Submit your program enquiry, view payment details with your sales code, or talk directly with a mentor." />
+      <section className="border-b border-cyan-300/10 bg-slate-950/60 py-8 sm:py-10">
+        <Container>
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">CyberVSI Enrollment</p>
+          <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Choose your next move</h1>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">Submit your program enquiry, view payment details with your sales code, or talk directly with a mentor.</p>
+        </Container>
+      </section>
       <Section>
         <Container>
           <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr]">
