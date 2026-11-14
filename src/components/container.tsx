@@ -8,5 +8,5 @@ export function Section({
   children,
   className = "",
 }: PropsWithChildren<{ className?: string }>) {
-  return <section className={`py-16 sm:py-20 ${className}`}>{children}</section>;
+  return <section className={`py-11 sm:py-14 ${className}`}>{children}</section>;
 }

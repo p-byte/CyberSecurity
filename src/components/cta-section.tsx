@@ -11,12 +11,12 @@ export function CTASection({
   description?: string;
 }) {
   return (
-    <section className="relative overflow-hidden py-16">
+    <section className="relative overflow-hidden py-10 sm:py-12">
       {/* Subtle bottom glow */}
       <div className="ambient-glow absolute bottom-[-40%] left-[30%] size-[320px] bg-cyan-500/10 blur-[80px]" />
       
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-2xl border border-cyan-300/15 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 px-8 py-12 shadow-xl shadow-black/40 backdrop-blur-md overflow-hidden sm:px-12 sm:py-16 md:px-16">
+        <div className="relative rounded-2xl border border-cyan-300/15 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 px-6 py-9 shadow-xl shadow-black/40 backdrop-blur-md overflow-hidden sm:px-10 sm:py-11 md:px-14">
           
           {/* Cybernetic grid inside panel */}
           <div className="cyber-grid absolute inset-0 opacity-15 pointer-events-none" />

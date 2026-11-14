@@ -22,7 +22,7 @@ export default function EnrollPage() {
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">Submit your program enquiry, view payment details with your sales code, or talk directly with a mentor.</p>
         </Container>
       </section>
-      <Section>
+      <Section className="pt-8 sm:pt-10">
         <Container>
           <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <EnrollmentForm />

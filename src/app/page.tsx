@@ -334,7 +334,7 @@ export default function Home() {
       </Section>
 
       {/* Enrollment Quick Trigger */}
-      <section id="google-form-placeholder" className="relative overflow-hidden py-16">
+      <section id="google-form-placeholder" className="relative overflow-hidden py-10 sm:py-12">
         <Container>
           <div className="relative rounded-2xl border border-cyan-300/15 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 px-8 py-10 shadow-lg shadow-black/40 backdrop-blur-md overflow-hidden sm:px-12">
             <div className="cyber-grid absolute inset-0 opacity-15 pointer-events-none" />

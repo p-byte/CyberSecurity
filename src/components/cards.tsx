@@ -17,7 +17,7 @@ export function ModuleCard({ title, summary, icon: Icon }: { title: string; summ
 
 export function PageHero({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {
   return (
-    <section className="relative overflow-hidden border-b border-cyan-300/10 bg-[radial-gradient(circle_at_80%_0%,rgba(34,211,238,0.12),transparent_38%)] py-16 sm:py-20">
+    <section className="relative overflow-hidden border-b border-cyan-300/10 bg-[radial-gradient(circle_at_80%_0%,rgba(34,211,238,0.12),transparent_38%)] py-11 sm:py-14">
       <div className="ambient-glow absolute top-[-20%] right-[-10%] size-[400px] bg-cyan-500/10 blur-[100px]" />
       <div className="cyber-grid absolute inset-0 opacity-20" />
       
