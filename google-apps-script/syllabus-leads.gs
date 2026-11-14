@@ -1,38 +1,34 @@
-/**
- * CyberVSI syllabus lead collector.
- *
- * Create a spreadsheet tab named "Syllabus Leads" with this header row:
- * Timestamp | Name | Email | Phone | Course | Message | Source | Submitted At
- */
+/** CyberVSI lead and payment-confirmation collector. */
 function doGet() {
-  return ContentService
-    .createTextOutput(JSON.stringify({ ok: true, service: "CyberVSI leads endpoint" }))
-    .setMimeType(ContentService.MimeType.JSON);
+  return ContentService.createTextOutput(JSON.stringify({ ok: true, service: "CyberVSI leads endpoint" })).setMimeType(ContentService.MimeType.JSON);
 }
 
 function doPost(e) {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   spreadsheet.setSpreadsheetTimeZone("Asia/Kolkata");
-  const sheet = spreadsheet.getSheetByName("Syllabus Leads") || spreadsheet.insertSheet("Syllabus Leads");
-  const data = JSON.parse(e.postData.contents || "{}");
-  const timestamp = Utilities.formatDate(new Date(), "Asia/Kolkata", "yyyy-MM-dd HH:mm:ss");
-
-  if (sheet.getLastRow() === 0) {
-    sheet.appendRow(["Timestamp", "Name", "Email", "Phone", "Course", "Message", "Source", "Submitted At"]);
-  }
-
-  sheet.appendRow([
-    timestamp,
-    String(data.name || "").trim(),
-    String(data.email || "").trim().toLowerCase(),
-    String(data.phone || "").trim(),
-    String(data.course || "").trim(),
-    String(data.message || "").trim(),
-    String(data.source || "website").trim(),
-    timestamp,
-  ]);
-
-  return ContentService
-    .createTextOutput(JSON.stringify({ success: true }))
-    .setMimeType(ContentService.MimeType.JSON);
+  var sheet = spreadsheet.getSheetByName("Syllabus Leads") || spreadsheet.insertSheet("Syllabus Leads");
+  var data = JSON.parse((e.postData && e.postData.contents) || "{}");
+  var timestamp = Utilities.formatDate(new Date(), "Asia/Kolkata", "yyyy-MM-dd HH:mm:ss");
+  ensureHeaders(sheet);
+  var screenshotUrl = "";
+  if (data.screenshotDataUrl) screenshotUrl = saveScreenshot(data.screenshotDataUrl, data.paymentId || "payment-proof");
+  sheet.appendRow([timestamp, clean(data.name), clean(data.email).toLowerCase(), clean(data.phone), clean(data.course), clean(data.message || ""), clean(data.source || "website"), timestamp, clean(data.paymentId || ""), screenshotUrl]);
+  return ContentService.createTextOutput(JSON.stringify({ success: true })).setMimeType(ContentService.MimeType.JSON);
 }
+
+function ensureHeaders(sheet) {
+  sheet.getRange(1, 1, 1, 10).setValues([["Timestamp", "Name", "Email", "Phone", "Course", "Message", "Source", "Submitted At", "Payment ID", "Payment Screenshot URL"]]);
+}
+
+function saveScreenshot(dataUrl, paymentId) {
+  var match = dataUrl.match(/^data:image\/(png|jpeg|jpg);base64,(.+)$/);
+  if (!match) return "";
+  var folders = DriveApp.getFoldersByName("CyberVSI Payment Proofs");
+  var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder("CyberVSI Payment Proofs");
+  var bytes = Utilities.base64Decode(match[2]);
+  var safeId = paymentId.replace(/[^a-zA-Z0-9_-]/g, "-");
+  var blob = Utilities.newBlob(bytes, "image/" + match[1], "CyberVSI-" + safeId + "-" + new Date().getTime() + "." + match[1]);
+  return folder.createFile(blob).getUrl();
+}
+
+function clean(value) { return String(value || "").trim(); }
