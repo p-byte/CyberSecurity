@@ -36,7 +36,7 @@ export default function EnrollPage() {
               <div className="rounded-2xl border border-amber-300/20 bg-amber-300/[0.06] p-6 sm:p-7">
                 <div className="flex items-center gap-2 text-amber-200"><CreditCard size={18} /><span className="text-xs font-bold uppercase tracking-[0.18em]">Already ready to pay?</span></div>
                 <h2 className="mt-4 text-xl font-extrabold text-white">Open payment details</h2>
-                <p className="mt-2 text-sm leading-6 text-slate-400">Use the sales executive code provided by Pornima to view the official bank and UPI details.</p>
+                <p className="mt-2 text-sm leading-6 text-slate-400">Use the payment access code <span className="font-semibold text-amber-100">CYBERVSI</span> to view the official bank and UPI details.</p>
                 <a href="/payment" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-amber-300/30 px-5 py-3 text-sm font-bold text-amber-100 transition hover:bg-amber-300/10">View payment details <ArrowRight size={16} /></a>
               </div>
             </aside>
