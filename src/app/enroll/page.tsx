@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, CreditCard, Mail, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowRight, CreditCard, MessageCircle, ShieldCheck } from "lucide-react";
 import { EnrollmentForm } from "@/components/enrollment-form";
 import { PageHero } from "@/components/cards";
 import { Container, Section } from "@/components/container";
@@ -13,50 +13,31 @@ export const metadata: Metadata = createMetadata({
   description: "Apply for a CyberVSI career program and get guidance from industry mentors.",
 });
 
-const nextSteps = [
-  "Choose the career program that matches your goal.",
-  "A CyberVSI mentor reviews your details and contacts you.",
-  "Get batch timings, curriculum guidance, and the next steps.",
-];
-
 export default function EnrollPage() {
   return (
     <>
-      <PageHero eyebrow="CyberVSI Enrollment" title="Start your practical career journey" description="Apply once and speak directly with the right mentor for cybersecurity, full stack development, Dynamics 365, or Cloud & DevSecOps." />
+      <PageHero eyebrow="CyberVSI Enrollment" title="Choose your next move" description="Submit your program enquiry, view payment details with your sales code, or talk directly with a mentor." />
       <Section>
         <Container>
-          <div className="grid items-start gap-8 lg:grid-cols-[0.82fr_1.18fr]">
-            <div className="space-y-6 lg:sticky lg:top-24">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">A clear next step</p>
-                <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white">Get the right path, not a generic brochure.</h2>
-                <p className="mt-4 leading-7 text-slate-400">Tell us what you want to learn and our team will help you understand the program, schedule, mentor support, and practical outcomes.</p>
-              </div>
-              <div className="space-y-3">
-                {nextSteps.map((step, index) => <div key={step} className="flex gap-3 rounded-xl border border-cyan-300/10 bg-slate-900/35 p-4"><span className="grid size-7 shrink-0 place-items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 text-xs font-bold text-cyan-200">0{index + 1}</span><p className="text-sm leading-6 text-slate-300">{step}</p></div>)}
-              </div>
-              <div className="rounded-xl border border-emerald-300/15 bg-emerald-300/[0.04] p-5">
-                <div className="flex items-center gap-2 text-emerald-300"><ShieldCheck size={17} /><span className="text-sm font-semibold">Simple and secure</span></div>
-                <p className="mt-2 text-sm leading-6 text-slate-400">We collect only the details needed to respond to your course enquiry. Your submission is recorded in the CyberVSI admissions sheet.</p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <ExternalLink href={siteConfig.whatsapp} className="inline-flex items-center gap-2 rounded-lg border border-emerald-300/25 bg-emerald-400/10 px-4 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20"><MessageCircle size={16} /> WhatsApp</ExternalLink>
-                <a href={`mailto:${siteConfig.email}`} className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-300/30"><Mail size={16} /> Email us</a>
-                <a href="/payment" className="inline-flex items-center gap-2 rounded-lg border border-amber-300/25 bg-amber-300/10 px-4 py-2.5 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20"><CreditCard size={16} /> View payment details</a>
-              </div>
-            </div>
+          <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <EnrollmentForm />
+            <aside className="space-y-5 lg:sticky lg:top-24">
+              <div className="rounded-2xl border border-cyan-300/15 bg-slate-900/50 p-6 shadow-xl shadow-cyan-950/10 sm:p-7">
+                <div className="flex items-center gap-2 text-cyan-300"><ShieldCheck size={18} /><span className="text-xs font-bold uppercase tracking-[0.18em]">Your next step</span></div>
+                <h2 className="mt-4 text-2xl font-extrabold text-white">Need help deciding?</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-400">Talk to a mentor about the right program, schedule, learning path, and enrollment process.</p>
+                <ExternalLink href={siteConfig.whatsapp} className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-400 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-300"><MessageCircle size={17} /> Talk to a mentor</ExternalLink>
+              </div>
+              <div className="rounded-2xl border border-amber-300/20 bg-amber-300/[0.06] p-6 sm:p-7">
+                <div className="flex items-center gap-2 text-amber-200"><CreditCard size={18} /><span className="text-xs font-bold uppercase tracking-[0.18em]">Already ready to pay?</span></div>
+                <h2 className="mt-4 text-xl font-extrabold text-white">Open payment details</h2>
+                <p className="mt-2 text-sm leading-6 text-slate-400">Use the sales executive code provided by Pornima to view the official bank and UPI details.</p>
+                <a href="/payment" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-amber-300/30 px-5 py-3 text-sm font-bold text-amber-100 transition hover:bg-amber-300/10">View payment details <ArrowRight size={16} /></a>
+              </div>
+            </aside>
           </div>
         </Container>
       </Section>
-      <section className="border-t border-cyan-300/10 py-12">
-        <Container>
-          <div className="flex flex-col justify-between gap-5 rounded-2xl border border-cyan-300/10 bg-slate-900/30 p-6 sm:flex-row sm:items-center sm:p-8">
-            <div className="flex items-start gap-3"><CheckCircle2 className="mt-1 shrink-0 text-cyan-300" size={20} /><div><h2 className="font-bold text-white">Prefer to ask before applying?</h2><p className="mt-1 text-sm text-slate-400">Talk to a mentor on WhatsApp and we will guide you to the right program.</p></div></div>
-            <ExternalLink href={siteConfig.whatsapp} className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-cyan-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200">Talk to a mentor <ArrowRight size={16} /></ExternalLink>
-          </div>
-        </Container>
-      </section>
     </>
   );
 }
