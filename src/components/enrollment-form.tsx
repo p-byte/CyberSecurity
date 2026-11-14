@@ -82,8 +82,9 @@ export function EnrollmentForm() {
   }
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-cyan-300/20 bg-slate-950/80 p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur-xl sm:p-8">
-      <div className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-cyan-400/10 blur-3xl" />
+    <div className="relative overflow-hidden rounded-2xl border border-cyan-300/40 bg-slate-900/90 p-6 shadow-2xl shadow-cyan-950/35 backdrop-blur-xl sm:p-8">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-cyan-300 shadow-[0_0_24px_rgba(34,211,238,0.8)]" />
+      <div className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-cyan-300/15 blur-3xl" />
       <AnimatePresence mode="wait">
         {success ? (
           <motion.div key="success" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="relative py-10 text-center">
@@ -127,26 +128,26 @@ export function EnrollmentForm() {
             </div>
 
             <div>
-              <label htmlFor="enroll-name" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">Full name</label>
+              <label htmlFor="enroll-name" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-cyan-100/80">Full name</label>
               <input id="enroll-name" name="name" value={formData.name} onChange={(event) => updateField("name", event.target.value)} autoComplete="name" disabled={loading} placeholder="Your full name" className="input-glow w-full rounded-lg px-4 py-3 text-sm" />
               {errors.name ? <p className="mt-1.5 text-xs text-red-400">{errors.name}</p> : null}
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
-                <label htmlFor="enroll-email" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">Email address</label>
+                <label htmlFor="enroll-email" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-cyan-100/80">Email address</label>
                 <input id="enroll-email" name="email" type="email" value={formData.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" disabled={loading} placeholder="you@example.com" className="input-glow w-full rounded-lg px-4 py-3 text-sm" />
                 {errors.email ? <p className="mt-1.5 text-xs text-red-400">{errors.email}</p> : null}
               </div>
               <div>
-                <label htmlFor="enroll-phone" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">Phone number</label>
+                <label htmlFor="enroll-phone" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-cyan-100/80">Phone number</label>
                 <input id="enroll-phone" name="phone" type="tel" value={formData.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" disabled={loading} placeholder="+91 9876543210" className="input-glow w-full rounded-lg px-4 py-3 text-sm" />
                 {errors.phone ? <p className="mt-1.5 text-xs text-red-400">{errors.phone}</p> : null}
               </div>
             </div>
 
             <div>
-              <label htmlFor="enroll-course" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">Program of interest</label>
+              <label htmlFor="enroll-course" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-cyan-100/80">Program of interest</label>
               <select id="enroll-course" name="course" value={formData.course} onChange={(event) => updateField("course", event.target.value)} disabled={loading} className="input-glow w-full rounded-lg px-4 py-3 text-sm">
                 {courses.map((course) => <option key={course}>{course}</option>)}
               </select>
