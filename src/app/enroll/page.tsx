@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, Mail, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, CreditCard, Mail, MessageCircle, ShieldCheck } from "lucide-react";
 import { EnrollmentForm } from "@/components/enrollment-form";
 import { PageHero } from "@/components/cards";
 import { Container, Section } from "@/components/container";
@@ -42,6 +42,7 @@ export default function EnrollPage() {
               <div className="flex flex-wrap gap-3">
                 <ExternalLink href={siteConfig.whatsapp} className="inline-flex items-center gap-2 rounded-lg border border-emerald-300/25 bg-emerald-400/10 px-4 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20"><MessageCircle size={16} /> WhatsApp</ExternalLink>
                 <a href={`mailto:${siteConfig.email}`} className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-300/30"><Mail size={16} /> Email us</a>
+                <a href="/payment" className="inline-flex items-center gap-2 rounded-lg border border-amber-300/25 bg-amber-300/10 px-4 py-2.5 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20"><CreditCard size={16} /> View payment details</a>
               </div>
             </div>
             <EnrollmentForm />

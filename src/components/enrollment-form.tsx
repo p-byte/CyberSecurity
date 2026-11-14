@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Loader2, Mail, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, CreditCard, Loader2, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const courses = [
@@ -98,6 +98,9 @@ export function EnrollmentForm() {
             <a href="https://wa.me/919180399906" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-lg border border-emerald-300/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20">
               <MessageCircle size={17} /> Talk to the academy on WhatsApp
             </a>
+            <a href="/payment" className="mt-3 inline-flex items-center gap-2 rounded-lg border border-amber-300/30 bg-amber-300/10 px-5 py-3 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20">
+              <CreditCard size={17} /> View payment details
+            </a>
           </motion.div>
         ) : (
           <motion.form key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} onSubmit={handleSubmit} noValidate className="relative space-y-5">
@@ -152,7 +155,7 @@ export function EnrollmentForm() {
             <button type="submit" disabled={loading} className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cyan-300 px-5 py-3.5 text-sm font-bold text-slate-950 shadow-[0_0_24px_rgba(34,211,238,0.2)] transition hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60">
               {loading ? <><Loader2 size={17} className="animate-spin" /> Sending securely...</> : <>{requestType === "demo" ? "Book Demo Class" : "Submit Enrollment"} <ArrowRight size={17} /></>}
             </button>
-            <p className="flex items-start gap-2 text-xs leading-5 text-slate-500"><ShieldCheck size={15} className="mt-0.5 shrink-0 text-cyan-300" /> Your details are used only to respond about CyberVSI programs. No payment is collected on this form.</p>
+            <p className="flex items-start gap-2 text-xs leading-5 text-slate-500"><ShieldCheck size={15} className="mt-0.5 shrink-0 text-cyan-300" /> Your details are used only to respond about CyberVSI programs. Payment is handled separately through the official payment details page.</p>
           </motion.form>
         )}
       </AnimatePresence>
