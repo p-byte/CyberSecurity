@@ -6,7 +6,9 @@ import { CheckCircle2, ChevronRight, BookOpen, Calendar, Sparkles } from "lucide
 import { CTASection } from "@/components/cta-section";
 import { ModuleCard, PageHero } from "@/components/cards";
 import { Container, Section } from "@/components/container";
-import { curriculumModules, curriculumTracks, fullStackModules, d365Modules, cloudDevSecOpsModules } from "@/content/site";
+import { curriculumModules, curriculumTracks, fullStackModules, d365Modules, cloudDevSecOpsModules, courseCatalog, pricingPlans, siteConfig } from "@/content/site";
+import { SyllabusDownloadButton } from "@/components/syllabus-download";
+import { ExternalLink } from "@/components/external-link";
 
 export default function CurriculumPage() {
   const [activeModule, setActiveModule] = useState<number | null>(1);
@@ -27,6 +29,22 @@ export default function CurriculumPage() {
             {curriculumModules.map((module) => (
               <ModuleCard key={module.title} {...module} />
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-cyan-300/10 bg-slate-950/40">
+        <Container>
+          <div className="mb-8">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200">Course downloads</div>
+            <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Download a curriculum</h2>
+            <p className="mt-3 max-w-3xl text-slate-400">Choose a program, enter your name, and open the official syllabus.</p>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {pricingPlans.map((plan) => {
+              const course = courseCatalog.find((item) => item.slug === plan.slug);
+              return course ? <article key={plan.slug} className="flex flex-col justify-between rounded-xl border border-cyan-300/15 bg-slate-900/45 p-5"><div><h3 className="text-lg font-bold text-white">{plan.name}</h3><p className="mt-2 text-sm leading-6 text-slate-400">{course.description}</p></div><div className="mt-6 grid gap-3"><SyllabusDownloadButton course={course} /><ExternalLink href={siteConfig.whatsapp} className="inline-flex items-center justify-center rounded-lg bg-emerald-400 px-4 py-3 text-sm font-bold text-slate-950 hover:bg-emerald-300">Ask on WhatsApp</ExternalLink></div></article> : null;
+            })}
           </div>
         </Container>
       </Section>

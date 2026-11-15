@@ -3,8 +3,6 @@ import { z } from "zod";
 
 const schema = z.object({
   name: z.string().trim().min(2).max(100),
-  email: z.string().trim().email().transform((value) => value.toLowerCase()),
-  phone: z.string().trim().regex(/^[+]?[0-9\s-]{10,18}$/),
   course: z.enum(["Cybersecurity Program", "SOC Mastery for VAPT Professionals", "Full Stack Developer Program", "Dynamics 365 & Power Platform Program", "Cloud & DevSecOps Program"]),
 });
 
@@ -19,7 +17,7 @@ export async function POST(request: Request) {
     const response = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...parsed.data, source: "syllabus-download", submittedAt: new Date().toISOString() }),
+      body: JSON.stringify({ ...parsed.data, email: "", phone: "", source: "syllabus-download", submittedAt: new Date().toISOString() }),
       redirect: "follow",
       cache: "no-store",
     });
