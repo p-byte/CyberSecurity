@@ -26,6 +26,9 @@ export function SyllabusDownloadButton({ course }: { course: Course }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.get("name"),
+          qualification: form.get("qualification"),
+          email: form.get("email"),
+          phone: form.get("phone"),
           course: course.name,
         }),
       });
@@ -58,12 +61,15 @@ export function SyllabusDownloadButton({ course }: { course: Course }) {
             <div className="p-7 sm:p-10">
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-700">Download syllabus</p>
               <h2 id="syllabus-title" className="mt-2 text-3xl font-extrabold text-slate-950">Tell us where to send it</h2>
-              <p className="mt-2 text-slate-500">Enter your name to continue to the course download.</p>
+              <p className="mt-2 text-slate-500">Complete these details to continue to the course download.</p>
               {state === "success" && !course.syllabusUrl ? (
                 <div className="mt-8 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-emerald-800"><CheckCircle2 className="mb-2" />{message} Add the Google Drive link for this course in your environment settings to enable direct download.</div>
               ) : (
                 <form onSubmit={submit} className="mt-7 grid gap-5">
                   <label className="grid gap-2 font-semibold text-slate-800">Name*<input name="name" required minLength={2} maxLength={100} className="rounded-lg border border-slate-300 px-4 py-3 font-normal outline-none focus:border-cyan-600" placeholder="Your full name" /></label>
+                  <label className="grid gap-2 font-semibold text-slate-800">Qualification*<input name="qualification" required minLength={2} maxLength={100} className="rounded-lg border border-slate-300 px-4 py-3 font-normal outline-none focus:border-cyan-600" placeholder="B.Tech, BCA, MCA, etc." /></label>
+                  <label className="grid gap-2 font-semibold text-slate-800">Mobile Number*<input name="phone" required type="tel" pattern="[+0-9\\s-]{10,18}" className="rounded-lg border border-slate-300 px-4 py-3 font-normal outline-none focus:border-cyan-600" placeholder="+91 98765 43210" /></label>
+                  <label className="grid gap-2 font-semibold text-slate-800">Gmail Address*<input name="email" type="email" required className="rounded-lg border border-slate-300 px-4 py-3 font-normal outline-none focus:border-cyan-600" placeholder="you@gmail.com" /></label>
                   <div className="rounded-lg bg-slate-100 px-4 py-3 text-sm text-slate-600"><span className="font-semibold text-slate-900">Selected program:</span> {course.name}</div>
                   {message ? <p className="text-sm text-red-600">{message}</p> : null}
                   <button type="submit" disabled={state === "submitting"} className="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-5 py-3.5 font-bold text-white hover:bg-blue-900 disabled:opacity-60">{state === "submitting" ? <><Loader2 className="animate-spin" size={18} /> Saving details...</> : "Next"}</button>

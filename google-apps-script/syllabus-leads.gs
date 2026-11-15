@@ -12,12 +12,12 @@ function doPost(e) {
   ensureHeaders(sheet);
   var screenshotUrl = "";
   if (data.screenshotDataUrl) screenshotUrl = saveScreenshot(data.screenshotDataUrl, data.paymentId || "payment-proof");
-  sheet.appendRow([timestamp, clean(data.name), clean(data.email).toLowerCase(), clean(data.phone), clean(data.course), clean(data.message || ""), clean(data.source || "website"), timestamp, clean(data.paymentId || ""), screenshotUrl]);
+  sheet.appendRow([timestamp, clean(data.name), clean(data.qualification), clean(data.email).toLowerCase(), clean(data.phone), clean(data.course), clean(data.message || ""), clean(data.source || "website"), timestamp, clean(data.paymentId || ""), screenshotUrl]);
   return ContentService.createTextOutput(JSON.stringify({ success: true })).setMimeType(ContentService.MimeType.JSON);
 }
 
 function ensureHeaders(sheet) {
-  sheet.getRange(1, 1, 1, 10).setValues([["Timestamp", "Name", "Email", "Phone", "Course", "Message", "Source", "Submitted At", "Payment ID", "Payment Screenshot URL"]]);
+  sheet.getRange(1, 1, 1, 11).setValues([["Timestamp", "Name", "Qualification", "Email", "Phone", "Course", "Message", "Source", "Submitted At", "Payment ID", "Payment Screenshot URL"]]);
 }
 
 function saveScreenshot(dataUrl, paymentId) {
