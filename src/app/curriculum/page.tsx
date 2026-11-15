@@ -90,7 +90,7 @@ export default function CurriculumPage() {
               <span>Full Coverage</span>
             </div>
             <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Module-Wise Interactive Syllabus</h2>
-            <p className="mt-3 text-slate-400">Click on any module below to browse its detailed week-by-week session breakdowns.</p>
+            <p className="mt-3 text-slate-400">Click on any module below to browse the 90-day, 64-class schedule from the supplied cybersecurity curriculum.</p>
           </div>
 
           <div className="mt-8 grid gap-5 max-w-5xl mx-auto">
