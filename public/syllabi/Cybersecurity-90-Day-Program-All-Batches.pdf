@@ -1,0 +1,2049 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R] /Count 14 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 3196 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 1) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(CYBERSECURITY) Tj
+ET
+BT
+/F1 9 Tf 50 740 Td
+(90-DAY PROFESSIONAL TRAINING CURRICULUM) Tj
+ET
+BT
+/F1 9 Tf 50 716 Td
+(90-Day Program  |  Monday-Friday  |  64 class days  |  5 modules) Tj
+ET
+BT
+/F1 9 Tf 50 692 Td
+(Hands-on curriculum including Microsoft Sentinel, Microsoft Defender, SOC) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(reporting, phishing analysis, malware analysis and capstone projects.) Tj
+ET
+BT
+/F2 13 Tf 50 656 Td
+(MODULE 1  |  Cybersecurity Foundations & Evolving Threat Landscapes) Tj
+ET
+BT
+/F2 13 Tf 50 626 Td
+(WEEK 01) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(DAY 01   -   1.1 + 1.2Workshop: Core Security Concepts / Workshop: Principles) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(and Threat Actors) Tj
+ET
+BT
+/F1 9 Tf 50 560 Td
+(Objective: Understand the foundational pillars of information security.  |) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Identify security threats and apply key defense principles.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(Topics covered: CIA Triad: confidentiality, integrity, availability; defining) Tj
+ET
+BT
+/F1 9 Tf 50 512 Td
+(cybersecurity and its importance in the modern digital age.  |  Threat actors) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(and attack vectors; Defense-in-Depth, Least Privilege and Zero Trust) Tj
+ET
+BT
+/F1 9 Tf 50 488 Td
+(implementation basics.) Tj
+ET
+BT
+/F1 9 Tf 50 464 Td
+(Learning outcome: Explain the CIA Triad and its application in protecting) Tj
+ET
+BT
+/F1 9 Tf 50 452 Td
+(information assets.  |  Categorize threat actors and apply Defense-in-Depth) Tj
+ET
+BT
+/F1 9 Tf 50 440 Td
+(and Least Privilege principles.) Tj
+ET
+BT
+/F1 9 Tf 50 416 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 392 Td
+(DAY 02   -   1.3Introduction to Cybersecurity Frameworks) Tj
+ET
+BT
+/F1 9 Tf 50 368 Td
+(Objective: Understand the standards governing global cybersecurity practices.) Tj
+ET
+BT
+/F1 9 Tf 50 344 Td
+(Topics covered: NIST Cybersecurity Framework, ISO 27001 overview and CIS) Tj
+ET
+BT
+/F1 9 Tf 50 332 Td
+(Controls; organizational security policies and standards.) Tj
+ET
+BT
+/F1 9 Tf 50 308 Td
+(Learning outcome: Describe the purpose and structure of major security) Tj
+ET
+BT
+/F1 9 Tf 50 296 Td
+(frameworks.) Tj
+ET
+BT
+/F1 9 Tf 50 272 Td
+(DAY 03   -   2.1 + 2.2Workshop: Networking Essentials - Protocols / Workshop:) Tj
+ET
+BT
+/F1 9 Tf 50 260 Td
+(Network Devices and Topologies) Tj
+ET
+BT
+/F1 9 Tf 50 236 Td
+(Objective: Master the communication models and protocols used in networks.  |) Tj
+ET
+BT
+/F1 9 Tf 50 224 Td
+(Configure and secure network infrastructure components.) Tj
+ET
+BT
+/F1 9 Tf 50 200 Td
+(Topics covered: TCP/IP model; TCP, UDP, IP, ICMP; data flow across layers;) Tj
+ET
+BT
+/F1 9 Tf 50 188 Td
+(IPv4/IPv6 basics.  |  Routers, switches, firewalls; network design, VLANs,) Tj
+ET
+BT
+/F1 9 Tf 50 176 Td
+(zoning; WPA2/WPA3 basics.) Tj
+ET
+BT
+/F1 9 Tf 50 152 Td
+(Learning outcome: Explain the TCP/IP model and functions of key protocols.  |) Tj
+ET
+BT
+/F1 9 Tf 50 140 Td
+(Identify network devices and design securely segmented topologies.) Tj
+ET
+BT
+/F1 9 Tf 50 116 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 92 Td
+(DAY 04   -   2.3Networking Architecture for Security) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3116 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 2) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Objective: Analyze network structures from a security perspective.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Topics covered: OSI vs TCP/IP; security implications of protocol) Tj
+ET
+BT
+/F1 9 Tf 50 716 Td
+(vulnerabilities, including ARP spoofing.) Tj
+ET
+BT
+/F1 9 Tf 50 692 Td
+(Learning outcome: Analyze security implications of network architectures and) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(protocols.) Tj
+ET
+BT
+/F1 9 Tf 50 656 Td
+(DAY 05   -   3.1Workshop: Traffic Analysis with Wireshark) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(Objective: Capture and inspect network traffic.) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Topics covered: Wireshark, tcpdump; interfaces, capture filters, packet) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(inspection; HTTP, DNS, TCP handshakes.) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(Learning outcome: Capture network traffic and navigate Wireshark effectively.) Tj
+ET
+BT
+/F2 13 Tf 50 548 Td
+(WEEK 02) Tj
+ET
+BT
+/F1 9 Tf 50 518 Td
+(DAY 06   -   3.2 + 3.3Workshop: Applied Network Security Analysis / Network) Tj
+ET
+BT
+/F1 9 Tf 50 506 Td
+(Traffic Forensics Concepts) Tj
+ET
+BT
+/F1 9 Tf 50 482 Td
+(Objective: Analyze traffic for anomalies and security issues.  |  Understand) Tj
+ET
+BT
+/F1 9 Tf 50 470 Td
+(the principles behind packet analysis.) Tj
+ET
+BT
+/F1 9 Tf 50 446 Td
+(Topics covered: Wireshark network-traffic lab; cleartext credentials; normal) Tj
+ET
+BT
+/F1 9 Tf 50 434 Td
+(vs anomalous traffic patterns.  |  Flow analysis, signature-detection) Tj
+ET
+BT
+/F1 9 Tf 50 422 Td
+(concepts, network metadata and packet-header interpretation.) Tj
+ET
+BT
+/F1 9 Tf 50 398 Td
+(Learning outcome: Detect anomalies and potential security issues through) Tj
+ET
+BT
+/F1 9 Tf 50 386 Td
+(packet analysis.  |  Interpret complex packet headers and explain) Tj
+ET
+BT
+/F1 9 Tf 50 374 Td
+(traffic-analysis logic.) Tj
+ET
+BT
+/F1 9 Tf 50 350 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 326 Td
+(DAY 07   -   4.1Workshop: Threat Landscape and Trends) Tj
+ET
+BT
+/F1 9 Tf 50 302 Td
+(Objective: Explore current cyber threats and technologies.) Tj
+ET
+BT
+/F1 9 Tf 50 278 Td
+(Topics covered: Ransomware and supply-chain attacks; cloud, IoT and AI) Tj
+ET
+BT
+/F1 9 Tf 50 266 Td
+(security implications.) Tj
+ET
+BT
+/F1 9 Tf 50 242 Td
+(Learning outcome: Identify emerging threats and security impacts of new) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(technologies.) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(DAY 08   -   4.2 + 4.3Workshop: Threat Intelligence and Case Studies /) Tj
+ET
+BT
+/F1 9 Tf 50 194 Td
+(Understanding Evolving Threats) Tj
+ET
+BT
+/F1 9 Tf 50 170 Td
+(Objective: Apply threat intelligence to real-world attacks.  |  Synthesize) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(knowledge of the global threat landscape.) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(Topics covered: Strategic, operational and tactical threat intelligence;) Tj
+ET
+BT
+/F1 9 Tf 50 122 Td
+(recent-breach case study covering timeline and attack vectors.  |  Cybercrime) Tj
+ET
+BT
+/F1 9 Tf 50 110 Td
+(economics; nation-state actors, evolving APTs and translation of threats into) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(business risk.) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 2729 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 3) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(Learning outcome: Analyze a real-world cyberattack using threat intelligence) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(methods.  |  Evaluate evolving threats and strategic organizational) Tj
+ET
+BT
+/F1 9 Tf 50 740 Td
+(implications.) Tj
+ET
+BT
+/F1 9 Tf 50 716 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 692 Td
+(DAY 09   -   5.1Module 1 Review & Lab Practice) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(Objective: Consolidate Module 1 learning.) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(Topics covered: CIA Triad, networking, Wireshark and threat landscape review;) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(open networking and packet-analysis practice.) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Learning outcome: Reinforce IT foundations and security basics.) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(DAY 10   -   5.2Workshop: Assessment Prep) Tj
+ET
+BT
+/F1 9 Tf 50 560 Td
+(Objective: Prepare for Module 1 evaluation.) Tj
+ET
+BT
+/F1 9 Tf 50 536 Td
+(Topics covered: Q&A on TCP/IP, frameworks and threat models; scenario-based) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(mock questions.) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(Learning outcome: Demonstrate readiness for the module assessment.) Tj
+ET
+BT
+/F2 13 Tf 50 476 Td
+(WEEK 03) Tj
+ET
+BT
+/F1 9 Tf 50 446 Td
+(DAY 11   -   PracticeModule 1 - Guided Practical Lab & Review 1) Tj
+ET
+BT
+/F1 9 Tf 50 422 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 410 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 386 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 374 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 350 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 326 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 302 Td
+(DAY 12   -   PracticeModule 1 - Guided Practical Lab & Review 2) Tj
+ET
+BT
+/F1 9 Tf 50 278 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 266 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 242 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 182 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(DAY 13   -   6Module 1 End-Module Evaluation) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(Objective: Evaluate Module 1 knowledge and practical skills.) Tj
+ET
+BT
+/F1 9 Tf 50 110 Td
+(Topics covered: End-module evaluation covering foundations, networking, packet) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(analysis and evolving threats.) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 3120 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 4) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(Learning outcome: Demonstrate proficiency in Module 1 learning objectives.) Tj
+ET
+BT
+/F1 9 Tf 50 740 Td
+(Format: Evaluation) Tj
+ET
+BT
+/F2 13 Tf 50 716 Td
+(MODULE 2  |  Ethical Hacking, Footprinting & Vulnerability Assessment) Tj
+ET
+BT
+/F1 9 Tf 50 686 Td
+(DAY 14   -   7.1Workshop: Ethical Hacking Tools Setup) Tj
+ET
+BT
+/F1 9 Tf 50 662 Td
+(Objective: Prepare an authorized ethical-hacking lab.) Tj
+ET
+BT
+/F1 9 Tf 50 638 Td
+(Topics covered: Kali Linux and penetration-testing tools; Kali VM,) Tj
+ET
+BT
+/F1 9 Tf 50 626 Td
+(Metasploitable, virtualization and isolated lab network setup.) Tj
+ET
+BT
+/F1 9 Tf 50 602 Td
+(Learning outcome: Configure a functional ethical-hacking lab with vulnerable) Tj
+ET
+BT
+/F1 9 Tf 50 590 Td
+(targets.) Tj
+ET
+BT
+/F1 9 Tf 50 566 Td
+(DAY 15   -   7.2 + 7.3Workshop: The Hacking Lifecycle / Legal and Ethical) Tj
+ET
+BT
+/F1 9 Tf 50 554 Td
+(Frameworks) Tj
+ET
+BT
+/F1 9 Tf 50 530 Td
+(Objective: Understand structured penetration-testing approaches.  |) Tj
+ET
+BT
+/F1 9 Tf 50 518 Td
+(Understand legal boundaries of offensive security.) Tj
+ET
+BT
+/F1 9 Tf 50 494 Td
+(Topics covered: Reconnaissance, scanning, gaining access, maintaining access) Tj
+ET
+BT
+/F1 9 Tf 50 482 Td
+(and covering tracks; PTES overview.  |  Applicable IT law, written) Tj
+ET
+BT
+/F1 9 Tf 50 470 Td
+(authorization, Rules of Engagement; white, black and grey hats.) Tj
+ET
+BT
+/F1 9 Tf 50 446 Td
+(Learning outcome: Describe five commonly taught hacking phases and structured) Tj
+ET
+BT
+/F1 9 Tf 50 434 Td
+(testing methods.  |  Apply legal and ethical standards to security) Tj
+ET
+BT
+/F1 9 Tf 50 422 Td
+(engagements.) Tj
+ET
+BT
+/F1 9 Tf 50 398 Td
+(Format: Combined class) Tj
+ET
+BT
+/F2 13 Tf 50 374 Td
+(WEEK 04) Tj
+ET
+BT
+/F1 9 Tf 50 344 Td
+(DAY 16   -   8.1Workshop: Passive Reconnaissance \(OSINT\)) Tj
+ET
+BT
+/F1 9 Tf 50 320 Td
+(Objective: Gather publicly available information without contacting targets) Tj
+ET
+BT
+/F1 9 Tf 50 308 Td
+(directly.) Tj
+ET
+BT
+/F1 9 Tf 50 284 Td
+(Topics covered: Search operators, Whois and public social-media research;) Tj
+ET
+BT
+/F1 9 Tf 50 272 Td
+(employee and technology-stack discovery.) Tj
+ET
+BT
+/F1 9 Tf 50 248 Td
+(Learning outcome: Perform passive reconnaissance within authorized scope.) Tj
+ET
+BT
+/F1 9 Tf 50 224 Td
+(DAY 17   -   8.2 + 8.3Workshop: OSINT Tools and Techniques / Reconnaissance) Tj
+ET
+BT
+/F1 9 Tf 50 212 Td
+(Strategy) Tj
+ET
+BT
+/F1 9 Tf 50 188 Td
+(Objective: Use specialized open-source intelligence tools.  |  Understand) Tj
+ET
+BT
+/F1 9 Tf 50 176 Td
+(strategic information gathering.) Tj
+ET
+BT
+/F1 9 Tf 50 152 Td
+(Topics covered: Shodan, theHarvester, Amass; authorized lab exercise on a) Tj
+ET
+BT
+/F1 9 Tf 50 140 Td
+(dummy target.  |  Reconnaissance and attack-surface mapping; correlating) Tj
+ET
+BT
+/F1 9 Tf 50 128 Td
+(diverse data points into a threat profile.) Tj
+ET
+BT
+/F1 9 Tf 50 104 Td
+(Learning outcome: Map an authorized target's public digital footprint.  |) Tj
+ET
+BT
+/F1 9 Tf 50 92 Td
+(Develop a reconnaissance strategy for target assessment.) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 2841 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 5) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(DAY 18   -   9.1Workshop: Active Scanning with Nmap) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(Objective: Identify hosts, ports and network services.) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(Topics covered: Authorized Nmap ping sweeps, SYN and connect scans; NSE) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(scripts.) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(Learning outcome: Identify live hosts and exposed services with Nmap.) Tj
+ET
+BT
+/F1 9 Tf 50 620 Td
+(DAY 19   -   9.2 + 9.3Workshop: Enumeration and DNS Analysis / Scanning) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Methodologies) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(Objective: Extract detailed information from network services.  |  Understand) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(scanning mechanics and detection implications.) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Topics covered: dig, nslookup; service/version/OS enumeration; lab combining) Tj
+ET
+BT
+/F1 9 Tf 50 536 Td
+(OSINT and active reconnaissance.  |  Packet-level port-scan logic, flags and) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(responses; network noise and detection-avoidance concepts.) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(Learning outcome: Conduct DNS analysis and service enumeration.  |  Interpret) Tj
+ET
+BT
+/F1 9 Tf 50 488 Td
+(scan results and explain scanning mechanics.) Tj
+ET
+BT
+/F1 9 Tf 50 464 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 440 Td
+(DAY 20   -   10.1Workshop: Vulnerability Management) Tj
+ET
+BT
+/F1 9 Tf 50 416 Td
+(Objective: Implement a vulnerability-management lifecycle.) Tj
+ET
+BT
+/F1 9 Tf 50 392 Td
+(Topics covered: Discovery, prioritization, remediation, verification;) Tj
+ET
+BT
+/F1 9 Tf 50 380 Td
+(distinguishing true and false positives.) Tj
+ET
+BT
+/F1 9 Tf 50 356 Td
+(Learning outcome: Execute core vulnerability-management steps.) Tj
+ET
+BT
+/F2 13 Tf 50 332 Td
+(WEEK 05) Tj
+ET
+BT
+/F1 9 Tf 50 302 Td
+(DAY 21   -   10.2Workshop: Automated Vulnerability Scanning) Tj
+ET
+BT
+/F1 9 Tf 50 278 Td
+(Objective: Detect security flaws using automated scanners.) Tj
+ET
+BT
+/F1 9 Tf 50 254 Td
+(Topics covered: OpenVAS or Nessus trial; scan policies, authenticated scans,) Tj
+ET
+BT
+/F1 9 Tf 50 242 Td
+(reports and result interpretation.) Tj
+ET
+BT
+/F1 9 Tf 50 218 Td
+(Learning outcome: Configure authorized vulnerability scans and interpret) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(results.) Tj
+ET
+BT
+/F1 9 Tf 50 182 Td
+(DAY 22   -   10.3Vulnerability Analysis and CVSS) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(Objective: Prioritize vulnerabilities based on risk.) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(Topics covered: CVE and CVSS; base, temporal and environmental scoring) Tj
+ET
+BT
+/F1 9 Tf 50 122 Td
+(concepts; misconfigurations and missing patches.) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(Learning outcome: Interpret CVSS ratings and prioritize remediation.) Tj
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 2629 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 6) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(DAY 23   -   11.1Module 2 Review & Capstone Lab) Tj
+ET
+BT
+/F1 9 Tf 50 740 Td
+(Objective: Combine Module 2 skills in one scenario.) Tj
+ET
+BT
+/F1 9 Tf 50 716 Td
+(Topics covered: OSINT, Nmap and Nessus/OpenVAS review; authorized) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(reconnaissance, scanning, findings and summary.) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(Learning outcome: Synthesize reconnaissance and scanning skills.) Tj
+ET
+BT
+/F1 9 Tf 50 656 Td
+(Format: Capstone) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(DAY 24   -   11.2Workshop: Reporting and Portfolio) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Objective: Document findings professionally.) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(Topics covered: Vulnerability assessment reporting; project write-ups for) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(GitHub/LinkedIn without sensitive data.) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Learning outcome: Create professional vulnerability-assessment documentation.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(DAY 25   -   PracticeModule 2 - Guided Practical Lab & Review 1) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 488 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 464 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 452 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 428 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 404 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F2 13 Tf 50 380 Td
+(WEEK 06) Tj
+ET
+BT
+/F1 9 Tf 50 350 Td
+(DAY 26   -   PracticeModule 2 - Guided Practical Lab & Review 2) Tj
+ET
+BT
+/F1 9 Tf 50 326 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 314 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 290 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 278 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 254 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(DAY 27   -   12Module 2 End-Module Evaluation) Tj
+ET
+BT
+/F1 9 Tf 50 182 Td
+(Objective: Evaluate Module 2 proficiency.) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(Topics covered: End-module evaluation of ethical hacking, footprinting and) Tj
+ET
+BT
+/F1 9 Tf 50 146 Td
+(vulnerability assessment.) Tj
+ET
+BT
+/F1 9 Tf 50 122 Td
+(Learning outcome: Demonstrate Module 2 learning outcomes.) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(Format: Evaluation) Tj
+ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 2818 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 7) Tj
+ET
+BT
+/F2 13 Tf 50 764 Td
+(MODULE 3  |  Advanced Network Security & Incident Response) Tj
+ET
+BT
+/F1 9 Tf 50 734 Td
+(DAY 28   -   13.1Workshop: Firewall Implementation) Tj
+ET
+BT
+/F1 9 Tf 50 710 Td
+(Objective: Configure network boundaries with firewall tools.) Tj
+ET
+BT
+/F1 9 Tf 50 686 Td
+(Topics covered: WAFs, NGFWs, iptables; input/output chains and dropped-packet) Tj
+ET
+BT
+/F1 9 Tf 50 674 Td
+(logging.) Tj
+ET
+BT
+/F1 9 Tf 50 650 Td
+(Learning outcome: Configure basic iptables filtering rules.) Tj
+ET
+BT
+/F1 9 Tf 50 626 Td
+(DAY 29   -   13.2Workshop: Intrusion Detection Systems) Tj
+ET
+BT
+/F1 9 Tf 50 602 Td
+(Objective: Deploy and monitor IDS/IPS for threat detection.) Tj
+ET
+BT
+/F1 9 Tf 50 578 Td
+(Topics covered: Signature vs anomaly detection; Snort and Wazuh; basic rule) Tj
+ET
+BT
+/F1 9 Tf 50 566 Td
+(writing and alert review.) Tj
+ET
+BT
+/F1 9 Tf 50 542 Td
+(Learning outcome: Interpret Wazuh alerts and deploy basic Snort rules.) Tj
+ET
+BT
+/F1 9 Tf 50 518 Td
+(DAY 30   -   13.3Network Defense Architecture) Tj
+ET
+BT
+/F1 9 Tf 50 494 Td
+(Objective: Understand network-wide mitigation strategies.) Tj
+ET
+BT
+/F1 9 Tf 50 470 Td
+(Topics covered: Site-to-site and remote-access VPNs, NAC, DDoS rate limiting) Tj
+ET
+BT
+/F1 9 Tf 50 458 Td
+(and scrubbing, firewall/IDS integration.) Tj
+ET
+BT
+/F1 9 Tf 50 434 Td
+(Learning outcome: Explain VPN, NAC and DDoS defensive roles.) Tj
+ET
+BT
+/F2 13 Tf 50 410 Td
+(WEEK 07) Tj
+ET
+BT
+/F1 9 Tf 50 380 Td
+(DAY 31   -   14.3Workshop: SIEM Deployment) Tj
+ET
+BT
+/F1 9 Tf 50 356 Td
+(Objective: Set up centralized log management.) Tj
+ET
+BT
+/F1 9 Tf 50 332 Td
+(Topics covered: Log collection, normalization, correlation; ELK stack; ingest) Tj
+ET
+BT
+/F1 9 Tf 50 320 Td
+(simple system logs.) Tj
+ET
+BT
+/F1 9 Tf 50 296 Td
+(Learning outcome: Explain SIEM architecture and ingest basic logs.) Tj
+ET
+BT
+/F1 9 Tf 50 272 Td
+(DAY 32   -   14.2 + 14.1Workshop: SOC Operations / Event Correlation Logic) Tj
+ET
+BT
+/F1 9 Tf 50 248 Td
+(Objective: Simulate the role of a SOC analyst.  |  Understand security) Tj
+ET
+BT
+/F1 9 Tf 50 236 Td
+(alert-generation logic.) Tj
+ET
+BT
+/F1 9 Tf 50 212 Td
+(Topics covered: L1/L2/L3 responsibilities and workflows; Splunk Community;) Tj
+ET
+BT
+/F1 9 Tf 50 200 Td
+(search/filter logs to identify events.  |  Correlating failed logins with) Tj
+ET
+BT
+/F1 9 Tf 50 188 Td
+(admin access; tuning false positives; syslog, Windows and firewall logs.) Tj
+ET
+BT
+/F1 9 Tf 50 164 Td
+(Learning outcome: Navigate SIEM searches and correlate security events.  |) Tj
+ET
+BT
+/F1 9 Tf 50 152 Td
+(Explain how SIEM correlation produces meaningful alerts.) Tj
+ET
+BT
+/F1 9 Tf 50 128 Td
+(Format: Combined class) Tj
+ET
+BT
+/F1 9 Tf 50 104 Td
+(DAY 33   -   15.1Workshop: Incident Response Playbooks) Tj
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 2863 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 8) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(Objective: Create structured incident-response playbooks.) Tj
+ET
+BT
+/F1 9 Tf 50 740 Td
+(Topics covered: Preparation, detection, analysis, containment, eradication,) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(recovery and lessons learned; phishing playbook lab.) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(Learning outcome: Write a playbook following the incident-response lifecycle.) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(DAY 34   -   15.2Workshop: Digital Forensics Essentials) Tj
+ET
+BT
+/F1 9 Tf 50 656 Td
+(Objective: Preserve and interpret incident evidence.) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(Topics covered: Chain of custody, volatile/nonvolatile evidence, memory dumps) Tj
+ET
+BT
+/F1 9 Tf 50 620 Td
+(and disk imaging concepts; incident communication.) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(Learning outcome: Apply evidence-preservation and communication principles.) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(DAY 35   -   15.3Crisis Management) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Objective: Manage stakeholder communications during incidents.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(Topics covered: Incident reporting and legal notification considerations;) Tj
+ET
+BT
+/F1 9 Tf 50 512 Td
+(lessons learned and root-cause analysis.) Tj
+ET
+BT
+/F1 9 Tf 50 488 Td
+(Learning outcome: Conduct post-incident reviews and communicate effectively.) Tj
+ET
+BT
+/F2 13 Tf 50 464 Td
+(WEEK 08) Tj
+ET
+BT
+/F1 9 Tf 50 434 Td
+(DAY 36   -   PracticeModule 3 - Guided Practical Lab & Review 1) Tj
+ET
+BT
+/F1 9 Tf 50 410 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 398 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 374 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 362 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 338 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 314 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 290 Td
+(DAY 37   -   PracticeModule 3 - Guided Practical Lab & Review 2) Tj
+ET
+BT
+/F1 9 Tf 50 266 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 254 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 218 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 194 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 170 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 146 Td
+(DAY 38   -   16Module 3 End-Module Evaluation) Tj
+ET
+BT
+/F1 9 Tf 50 122 Td
+(Objective: Evaluate Module 3 knowledge and practice.) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(Topics covered: Assessment covering network defenses, SIEM, SOC and incident) Tj
+ET
+BT
+/F1 9 Tf 50 86 Td
+(response.) Tj
+ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 2755 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 9) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Learning outcome: Demonstrate Module 3 learning outcomes.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Format: Evaluation) Tj
+ET
+BT
+/F2 13 Tf 50 704 Td
+(MODULE 4  |  Secure Coding Practices, AppSec & AI Automation) Tj
+ET
+BT
+/F1 9 Tf 50 674 Td
+(DAY 39   -   17.1Workshop: Threat Modeling) Tj
+ET
+BT
+/F1 9 Tf 50 650 Td
+(Objective: Identify design-level security threats.) Tj
+ET
+BT
+/F1 9 Tf 50 626 Td
+(Topics covered: Security throughout SDLC; STRIDE; model a login flow and) Tj
+ET
+BT
+/F1 9 Tf 50 614 Td
+(identify potential threats.) Tj
+ET
+BT
+/F1 9 Tf 50 590 Td
+(Learning outcome: Perform STRIDE threat modeling for a simple application.) Tj
+ET
+BT
+/F1 9 Tf 50 566 Td
+(DAY 40   -   17.2 + 17.3Workshop: Secure Design Integration / Secure SDLC) Tj
+ET
+BT
+/F1 9 Tf 50 554 Td
+(Frameworks) Tj
+ET
+BT
+/F1 9 Tf 50 530 Td
+(Objective: Integrate security requirements early.  |  Understand secure) Tj
+ET
+BT
+/F1 9 Tf 50 518 Td
+(software development lifecycles.) Tj
+ET
+BT
+/F1 9 Tf 50 494 Td
+(Topics covered: Security-by-design, least attack surface, secure defaults;) Tj
+ET
+BT
+/F1 9 Tf 50 482 Td
+(security gates and design-document reviews.  |  Microsoft SDL, OWASP SAMM,) Tj
+ET
+BT
+/F1 9 Tf 50 470 Td
+(shift-left economics and design risk measurement.) Tj
+ET
+BT
+/F1 9 Tf 50 446 Td
+(Learning outcome: Apply security-by-design to requirements and designs.  |) Tj
+ET
+BT
+/F1 9 Tf 50 434 Td
+(Explain secure SDLC frameworks and shifting security left.) Tj
+ET
+BT
+/F1 9 Tf 50 410 Td
+(Format: Combined class) Tj
+ET
+BT
+/F2 13 Tf 50 386 Td
+(WEEK 09) Tj
+ET
+BT
+/F1 9 Tf 50 356 Td
+(DAY 41   -   18.1Workshop: Web Vulnerability Exploitation) Tj
+ET
+BT
+/F1 9 Tf 50 332 Td
+(Objective: Identify common web flaws in a controlled lab.) Tj
+ET
+BT
+/F1 9 Tf 50 308 Td
+(Topics covered: OWASP Top 10 including injection, broken authentication and) Tj
+ET
+BT
+/F1 9 Tf 50 296 Td
+(XSS; Burp Suite Community, OWASP ZAP; interception and parameter testing.) Tj
+ET
+BT
+/F1 9 Tf 50 272 Td
+(Learning outcome: Use Burp to identify and validate common web) Tj
+ET
+BT
+/F1 9 Tf 50 260 Td
+(vulnerabilities.) Tj
+ET
+BT
+/F1 9 Tf 50 236 Td
+(DAY 42   -   18.2Workshop: API Security) Tj
+ET
+BT
+/F1 9 Tf 50 212 Td
+(Objective: Assess API-specific weaknesses.) Tj
+ET
+BT
+/F1 9 Tf 50 188 Td
+(Topics covered: Authentication and rate limiting; SQLMap and Burp for) Tj
+ET
+BT
+/F1 9 Tf 50 176 Td
+(authorized API testing; controlled injection-testing lab.) Tj
+ET
+BT
+/F1 9 Tf 50 152 Td
+(Learning outcome: Test APIs and perform controlled injection assessments.) Tj
+ET
+BT
+/F1 9 Tf 50 128 Td
+(DAY 43   -   18.3Web Defense Mechanisms) Tj
+ET
+BT
+/F1 9 Tf 50 104 Td
+(Objective: Understand the defenses against web attacks.) Tj
+ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 2896 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 10) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(Topics covered: Input validation, output encoding, parameterized queries;) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(OAuth, JWT and mechanics of XSS/SQLi.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Learning outcome: Explain attacks and corresponding secure-coding defenses.) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(DAY 44   -   19.1Workshop: Secure Code Review) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(Objective: Detect insecure code and dependencies.) Tj
+ET
+BT
+/F1 9 Tf 50 656 Td
+(Topics covered: Bandit Python SAST, Snyk SCA and supply-chain security; find) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(and remediate a sample issue.) Tj
+ET
+BT
+/F1 9 Tf 50 620 Td
+(Learning outcome: Apply SAST/SCA tooling to code and dependencies.) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(DAY 45   -   19.2Workshop: Applied Cryptography) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(Objective: Implement basic code-level data protection.) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Topics covered: Encryption vs hashing, password salting, secure configuration,) Tj
+ET
+BT
+/F1 9 Tf 50 536 Td
+(errors/logging; password-hashing lab.) Tj
+ET
+BT
+/F1 9 Tf 50 512 Td
+(Learning outcome: Implement secure password hashing and handling patterns.) Tj
+ET
+BT
+/F2 13 Tf 50 488 Td
+(WEEK 10) Tj
+ET
+BT
+/F1 9 Tf 50 458 Td
+(DAY 46   -   LAB-SENT-01Microsoft Sentinel Lab: Workspace Setup & Data) Tj
+ET
+BT
+/F1 9 Tf 50 446 Td
+(Ingestion) Tj
+ET
+BT
+/F1 9 Tf 50 422 Td
+(Objective: Create a functional Microsoft Sentinel lab.) Tj
+ET
+BT
+/F1 9 Tf 50 398 Td
+(Topics covered: Azure subscription and permissions; Log Analytics workspace;) Tj
+ET
+BT
+/F1 9 Tf 50 386 Td
+(enable Sentinel; connect sample Windows/Azure activity logs; inspect ingestion) Tj
+ET
+BT
+/F1 9 Tf 50 374 Td
+(status.) Tj
+ET
+BT
+/F1 9 Tf 50 350 Td
+(Learning outcome: Provision the lab workspace and verify security data) Tj
+ET
+BT
+/F1 9 Tf 50 338 Td
+(ingestion.) Tj
+ET
+BT
+/F1 9 Tf 50 314 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 290 Td
+(DAY 47   -   LAB-SENT-02Microsoft Sentinel Lab: KQL Log Hunting) Tj
+ET
+BT
+/F1 9 Tf 50 266 Td
+(Objective: Investigate security telemetry using Kusto Query Language.) Tj
+ET
+BT
+/F1 9 Tf 50 242 Td
+(Topics covered: KQL basics: where, project, summarize, join and time) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(filtering; sign-in investigations; failed-logon analysis; hands-on hunting) Tj
+ET
+BT
+/F1 9 Tf 50 218 Td
+(queries.) Tj
+ET
+BT
+/F1 9 Tf 50 194 Td
+(Learning outcome: Write and validate KQL queries to investigate suspicious) Tj
+ET
+BT
+/F1 9 Tf 50 182 Td
+(activity.) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(DAY 48   -   LAB-SENT-03Microsoft Sentinel Lab: Analytics Rules & Incidents) Tj
+ET
+BT
+/F1 9 Tf 50 110 Td
+(Objective: Build detection rules and triage incidents in Sentinel.) Tj
+ET
+BT
+/F1 9 Tf 50 86 Td
+(Topics covered: Create scheduled analytics rules using lab events; tune) Tj
+ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 2970 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 11) Tj
+ET
+BT
+/F1 9 Tf 50 764 Td
+(thresholds; group incidents; investigate entities, timelines and evidence;) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(document triage.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Learning outcome: Create a detection rule and triage an incident using) Tj
+ET
+BT
+/F1 9 Tf 50 716 Td
+(supporting logs.) Tj
+ET
+BT
+/F1 9 Tf 50 692 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(DAY 49   -   LAB-DEF-01Microsoft Defender Lab: XDR Portal & Incident) Tj
+ET
+BT
+/F1 9 Tf 50 656 Td
+(Investigation) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(Objective: Navigate the Microsoft Defender XDR experience and analyze alerts.) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Topics covered: Lab or trial tenant setup and prerequisites; Defender portal;) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(incidents and alerts; evidence, entities, device timelines, and investigation) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(workflow.) Tj
+ET
+BT
+/F1 9 Tf 50 560 Td
+(Learning outcome: Investigate a lab incident and document the findings and) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(disposition.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(DAY 50   -   LAB-DEF-02Microsoft Defender Lab: Endpoint & Email Investigations) Tj
+ET
+BT
+/F1 9 Tf 50 476 Td
+(Objective: Practice endpoint and email security investigations.) Tj
+ET
+BT
+/F1 9 Tf 50 452 Td
+(Topics covered: Microsoft Defender for Endpoint device and alert workflows;) Tj
+ET
+BT
+/F1 9 Tf 50 440 Td
+(Microsoft Defender for Office 365 email investigation features where licensed;) Tj
+ET
+BT
+/F1 9 Tf 50 428 Td
+(simulated threats; containment decision practice.) Tj
+ET
+BT
+/F1 9 Tf 50 404 Td
+(Learning outcome: Correlate endpoint and email evidence and recommend) Tj
+ET
+BT
+/F1 9 Tf 50 392 Td
+(defensible response actions.) Tj
+ET
+BT
+/F1 9 Tf 50 368 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F2 13 Tf 50 344 Td
+(WEEK 11) Tj
+ET
+BT
+/F1 9 Tf 50 314 Td
+(DAY 51   -   LAB-REP-01SOC Reporting Lab: Daily Reports & Shift Handover) Tj
+ET
+BT
+/F1 9 Tf 50 290 Td
+(Objective: Produce practical SOC operational reports.) Tj
+ET
+BT
+/F1 9 Tf 50 266 Td
+(Topics covered: Daily alert summary; alert severity and status; SLA tracking;) Tj
+ET
+BT
+/F1 9 Tf 50 254 Td
+(false-positive and true-positive classification; shift handover template;) Tj
+ET
+BT
+/F1 9 Tf 50 242 Td
+(escalations and pending actions.) Tj
+ET
+BT
+/F1 9 Tf 50 218 Td
+(Learning outcome: Prepare a professional SOC daily report and shift handover) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(document.) Tj
+ET
+BT
+/F1 9 Tf 50 182 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(DAY 52   -   PracticeModule 4 - Guided Practical Lab & Review 1) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 122 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 98 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 86 Td
+(in the preceding sessions.) Tj
+ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 2668 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 12) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(DAY 53   -   PracticeModule 4 - Guided Practical Lab & Review 2) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 560 Td
+(DAY 54   -   22Module 4 End-Module Evaluation) Tj
+ET
+BT
+/F1 9 Tf 50 536 Td
+(Objective: Evaluate Module 4 proficiency.) Tj
+ET
+BT
+/F1 9 Tf 50 512 Td
+(Topics covered: Assessment covering AppSec, secure coding, Python and basic) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(automation.) Tj
+ET
+BT
+/F1 9 Tf 50 476 Td
+(Learning outcome: Demonstrate Module 4 learning outcomes.) Tj
+ET
+BT
+/F1 9 Tf 50 452 Td
+(Format: Evaluation) Tj
+ET
+BT
+/F2 13 Tf 50 428 Td
+(MODULE 5  |  AI-Driven Cybersecurity: Detection, Automation & Defense) Tj
+ET
+BT
+/F1 9 Tf 50 398 Td
+(DAY 55   -   23.1Workshop: Introduction to AI/ML in Security) Tj
+ET
+BT
+/F1 9 Tf 50 374 Td
+(Objective: Build a beginner ML model for security.) Tj
+ET
+BT
+/F1 9 Tf 50 350 Td
+(Topics covered: Supervised vs unsupervised ML; anomaly/phishing detection;) Tj
+ET
+BT
+/F1 9 Tf 50 338 Td
+(scikit-learn, file-feature classification lab.) Tj
+ET
+BT
+/F1 9 Tf 50 314 Td
+(Learning outcome: Train a simple supervised classifier on security data.) Tj
+ET
+BT
+/F2 13 Tf 50 290 Td
+(WEEK 12) Tj
+ET
+BT
+/F1 9 Tf 50 260 Td
+(DAY 56   -   23.2Workshop: Security Orchestration \(SOAR\)) Tj
+ET
+BT
+/F1 9 Tf 50 236 Td
+(Objective: Design security automation workflows.) Tj
+ET
+BT
+/F1 9 Tf 50 212 Td
+(Topics covered: SOAR concepts, Cortex overview, TheHive case management,) Tj
+ET
+BT
+/F1 9 Tf 50 200 Td
+(Python integrations; automated-triage workflow lab.) Tj
+ET
+BT
+/F1 9 Tf 50 176 Td
+(Learning outcome: Design a basic SOAR triage workflow using TheHive concepts.) Tj
+ET
+BT
+/F1 9 Tf 50 152 Td
+(DAY 57   -   23.3Data Science for Cybersecurity) Tj
+ET
+BT
+/F1 9 Tf 50 128 Td
+(Objective: Understand requirements and pitfalls of security ML.) Tj
+ET
+BT
+/F1 9 Tf 50 104 Td
+(Topics covered: Data quality, size, labeling, overfitting, bias,) Tj
+ET
+BT
+/F1 9 Tf 50 92 Td
+(garbage-in-garbage-out and anomaly-detection theory.) Tj
+ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 2899 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 13) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Learning outcome: Explain ML data requirements and failure modes.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(DAY 58   -   LAB-PHISH-01Phishing Analysis Lab: Email Headers & Authentication) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(Objective: Analyze suspicious emails safely using defensive workflows.) Tj
+ET
+BT
+/F1 9 Tf 50 680 Td
+(Topics covered: Email headers, sender and return-path analysis; SPF, DKIM,) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(DMARC results; message routing; phishing indicators; isolated sample analysis.) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(Learning outcome: Identify phishing indicators and document an email) Tj
+ET
+BT
+/F1 9 Tf 50 632 Td
+(investigation.) Tj
+ET
+BT
+/F1 9 Tf 50 608 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(DAY 59   -   LAB-PHISH-02Phishing Analysis Lab: URLs, Attachments & Case) Tj
+ET
+BT
+/F1 9 Tf 50 572 Td
+(Report) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(Objective: Perform end-to-end phishing triage.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(Topics covered: URL reputation and redirect investigation; attachment metadata) Tj
+ET
+BT
+/F1 9 Tf 50 512 Td
+(and hashes; VirusTotal and URLScan use; sandbox-report interpretation;) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(escalation and phishing incident report.) Tj
+ET
+BT
+/F1 9 Tf 50 476 Td
+(Learning outcome: Produce an evidence-based phishing case report with) Tj
+ET
+BT
+/F1 9 Tf 50 464 Td
+(recommended actions.) Tj
+ET
+BT
+/F1 9 Tf 50 440 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F1 9 Tf 50 416 Td
+(DAY 60   -   LAB-MAL-01Malware Analysis Lab: Static & Dynamic Triage) Tj
+ET
+BT
+/F1 9 Tf 50 392 Td
+(Objective: Perform safe, introductory malware analysis in an isolated lab.) Tj
+ET
+BT
+/F1 9 Tf 50 368 Td
+(Topics covered: Isolated VM setup and snapshots; file hashes and strings; PE) Tj
+ET
+BT
+/F1 9 Tf 50 356 Td
+(metadata; safe sample selection; sandbox behavior, processes, persistence) Tj
+ET
+BT
+/F1 9 Tf 50 344 Td
+(indicators and network activity; IOC reporting.) Tj
+ET
+BT
+/F1 9 Tf 50 320 Td
+(Learning outcome: Document static/dynamic observations and write a basic) Tj
+ET
+BT
+/F1 9 Tf 50 308 Td
+(malware analysis report.) Tj
+ET
+BT
+/F1 9 Tf 50 284 Td
+(Format: Hands-on lab) Tj
+ET
+BT
+/F2 13 Tf 50 260 Td
+(WEEK 13) Tj
+ET
+BT
+/F1 9 Tf 50 230 Td
+(DAY 61   -   PracticeModule 5 - Guided Practical Lab & Review 1) Tj
+ET
+BT
+/F1 9 Tf 50 206 Td
+(Objective: Reinforce the module workshops through supervised practice and) Tj
+ET
+BT
+/F1 9 Tf 50 194 Td
+(questions.) Tj
+ET
+BT
+/F1 9 Tf 50 170 Td
+(Topics covered: Hands-on revision and application of the module topics listed) Tj
+ET
+BT
+/F1 9 Tf 50 158 Td
+(in the preceding sessions.) Tj
+ET
+BT
+/F1 9 Tf 50 134 Td
+(Learning outcome: Demonstrate applied understanding of the module skills.) Tj
+ET
+BT
+/F1 9 Tf 50 110 Td
+(Format: Practice / review) Tj
+ET
+BT
+/F1 9 Tf 50 86 Td
+(DAY 62   -   25Module 5 End-Module Evaluation) Tj
+ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Length 1492 >>
+stream
+BT
+/F2 8 Tf 50 814 Td
+(CyberVSI | Cybersecurity 90-Day Professional Training Curriculum | Page 14) Tj
+ET
+BT
+/F1 9 Tf 50 752 Td
+(Objective: Evaluate Module 5 proficiency.) Tj
+ET
+BT
+/F1 9 Tf 50 728 Td
+(Topics covered: End-module assessment on security ML, SOAR and adversarial AI.) Tj
+ET
+BT
+/F1 9 Tf 50 704 Td
+(Learning outcome: Demonstrate understanding of AI-driven security and) Tj
+ET
+BT
+/F1 9 Tf 50 692 Td
+(automation.) Tj
+ET
+BT
+/F1 9 Tf 50 668 Td
+(Format: Evaluation) Tj
+ET
+BT
+/F1 9 Tf 50 644 Td
+(DAY 63   -   26Capstone Project - Phase 1) Tj
+ET
+BT
+/F1 9 Tf 50 620 Td
+(Objective: Apply combined security skills to a project.) Tj
+ET
+BT
+/F1 9 Tf 50 596 Td
+(Topics covered: Capstone project: scope, lab setup, investigation, testing and) Tj
+ET
+BT
+/F1 9 Tf 50 584 Td
+(evidence collection.) Tj
+ET
+BT
+/F1 9 Tf 50 560 Td
+(Learning outcome: Begin an integrated project demonstrating practical security) Tj
+ET
+BT
+/F1 9 Tf 50 548 Td
+(analysis.) Tj
+ET
+BT
+/F1 9 Tf 50 524 Td
+(Format: Capstone) Tj
+ET
+BT
+/F1 9 Tf 50 500 Td
+(DAY 64   -   27Capstone Project - Phase 2) Tj
+ET
+BT
+/F1 9 Tf 50 476 Td
+(Objective: Complete and present the final project.) Tj
+ET
+BT
+/F1 9 Tf 50 452 Td
+(Topics covered: Capstone project: analysis completion, remediation, final) Tj
+ET
+BT
+/F1 9 Tf 50 440 Td
+(report and presentation.) Tj
+ET
+BT
+/F1 9 Tf 50 416 Td
+(Learning outcome: Deliver and present a documented cybersecurity capstone) Tj
+ET
+BT
+/F1 9 Tf 50 404 Td
+(project.) Tj
+ET
+BT
+/F1 9 Tf 50 380 Td
+(Format: Capstone) Tj
+ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 31 0 R >>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000206 00000 n 
+0000000276 00000 n 
+0000000351 00000 n 
+0000003599 00000 n 
+0000003735 00000 n 
+0000006903 00000 n 
+0000007039 00000 n 
+0000009820 00000 n 
+0000009957 00000 n 
+0000013130 00000 n 
+0000013268 00000 n 
+0000016162 00000 n 
+0000016300 00000 n 
+0000018982 00000 n 
+0000019120 00000 n 
+0000021991 00000 n 
+0000022129 00000 n 
+0000025045 00000 n 
+0000025183 00000 n 
+0000027991 00000 n 
+0000028129 00000 n 
+0000031078 00000 n 
+0000031216 00000 n 
+0000034239 00000 n 
+0000034377 00000 n 
+0000037098 00000 n 
+0000037236 00000 n 
+0000040188 00000 n 
+0000040326 00000 n 
+0000041871 00000 n 
+trailer
+<< /Size 33 /Root 1 0 R >>
+startxref
+42009
+%%EOF

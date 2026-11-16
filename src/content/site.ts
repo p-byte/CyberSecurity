@@ -307,7 +307,7 @@ export const courseCatalog = [
     name: "Cybersecurity Program",
     description: "Practical SOC, VAPT, SIEM, cloud security, ethical hacking, and bug bounty training with mentor-led labs.",
     mentor: "N Pruthvi Krishna & Rambabu",
-    syllabusUrl: process.env.NEXT_PUBLIC_CYBER_SYLLABUS_URL || "/syllabi/Cybersecurity-90-Day-Program-All-Batches.docx",
+    syllabusUrl: process.env.NEXT_PUBLIC_CYBER_SYLLABUS_URL || "/syllabi/Cybersecurity-90-Day-Program-All-Batches.pdf",
     modules: curriculumModules.map((module) => module.title),
   },
   {
